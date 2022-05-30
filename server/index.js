@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 import authRoute from "./routes/auth.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
-
+import path from "path";
 const app = express();
 dotenv.config();
 
@@ -39,6 +39,14 @@ app.use((err, req, res, next) => {
     message: errorMessage,
     stack: err.stack,
   });
+});
+
+const __dirname = path.resolve();
+
+app.use(express.static(path.join(__dirname, "/client/build")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "/client/build", "index.html"));
 });
 
 const port = process.env.PORT || 8800;

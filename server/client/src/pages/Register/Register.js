@@ -1,4 +1,4 @@
-import axios from "axios";
+import axiosInstance from "../../utils/config";
 import { useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
@@ -65,7 +65,7 @@ export default function Register() {
     e.preventDefault();
     dispatch({ type: "REGISTER_START" });
     try {
-      const res = await axios.post("/auth/register", credentials);
+      const res = await axiosInstance.post("/auth/register", credentials);
       dispatch({ type: "REGISTER_SUCCESS", payload: res.data.details });
       navigate("/login");
     } catch (err) {
