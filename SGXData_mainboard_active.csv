@@ -1,0 +1,415 @@
+Trading Name,Trading Code,RIC,Mkt Cap ($M),Sector
+MM2 Asia,1B0,MM2A.SI,120.932,Cyclical Consumer Services
+Union Gas,1F2,UNIO.SI,231.861,Utilities
+Aspen,1F3,ASPE.SI,75.468,Real Estate
+Avi-Tech Hldg,1R6,,,
+AMOS Group,49B,AMOS.SI,26.25,Industrial Goods
+Tai Sin Electric,500,TAIS.SI,175.936,Industrial Goods
+Second Chance,528,SECD.SI,164.675,Real Estate
+ABR,533,ABRH.SI,97.483,Food & Beverages
+Noel Gifts Intl,543,NOEL.SI,21.52,Retailers
+CSE Global,544,CSES.SI,245.132,Software & IT Services
+King Wan,554,,,
+UMS,558,UMSH.SI,803.743,Technology Equipment
+Spindex Ind,564,SNEX.SI,151.128,Industrial Goods
+SHS,566,SEEH.SI,110.86,Industrial & Commercial Services
+Vicplas Intl,569,VICP.SI,112.538,Healthcare Services
+Transit Concrete,570,TMCL.SI,14.496,Mineral Resources
+Challenger,573,CHAL.SI,229.003,Retailers
+ASTI,575,ATIH.SI,19.095,Technology Equipment
+Oceanus,579,OCGL.SI,680.314,Food & Beverages
+Pavillon,596,PAVI.SI,11.632,Cyclical Consumer Services
+Trek 2000 Intl,5AB,TRKL.SI,27.714,Technology Equipment
+AP Oil,5AU,AOIL.SI,27.641,Chemicals
+OKP,5CF,OKPH.SI,58.91,Industrial & Commercial Services
+Silverlake Axis,5CP,SLVX.SI,630.625,Financial Technology (Fintech) & Infrastructure
+Micro-Mechanics,5DD,MMEC.SI,460.196,Technology Equipment
+Ying Li Intl,5DM,YING.SI,172.878,Real Estate
+Sakae,5DO,SAKA.SI,13.348,Cyclical Consumer Services
+Heeton,5DP,HEET.SI,143.882,Real Estate
+Sunpower,5GD,SUNP.SI,336.22,Industrial Goods
+Interra Resource,5GI,INTR.SI,27.372,Energy - Fossil Fuels
+AusGroup,5GJ,AUSG.SI,62.422,Energy - Fossil Fuels
+SingHoldings,5IC,SHDS.SI,152.378,Real Estate
+Gallant Venture,5IG,GLVT.SI,704.805,Automobiles & Auto Parts
+Hiap Hoe,5JK,HIAP.SI,303.717,Real Estate
+Indofood Agri,5JS,IFAR.SI,432.737,Food & Beverages
+Soup Restaurant,5KI,SRGL.SI,23.283,Cyclical Consumer Services
+MarcoPolo Marine,5LY,MAPM.SI,95.224,Transportation
+KingsmenCreative,5MZ,KMEN.SI,47.458,Industrial & Commercial Services
+Mencast,5NF,MCHL.SI,12.998,Energy - Fossil Fuels
+Chasen,5NV,CHHL.SI,27.221,Transportation
+Goodland,5PC,GLGP.SI,60.785,Real Estate
+Duty Free Intl,5SO,DUTY.SI,116.212,Transportation
+Zhongmin Baihui,5SR,ZBRG.SI,140.537,Retailers
+Keong Hong,5TT,KEHO.SI,92.175,Industrial & Commercial Services
+Oxley,5UX,OXHL.SI,772.348,Real Estate
+Halcyon Agri,5VJ,HALC.SI,364.741,Automobiles & Auto Parts
+Hafary,5VS,HFRY.SI,77.499,Cyclical Consumer Products
+Forise Int,8A1,FOIL.SI,3.6,Industrial & Commercial Services
+Aztech Gbl,8AZ,AZTE.SI,653.883,Industrial Goods
+IREIT Global EUR,8U7U,,,
+CapitaLandInvest,9CI,CAPN.SI,17951.025,Banking & Investment Services
+ASL Marine,A04,ASLM.SI,36.722,Industrial Goods
+Ascendas Reit,A17U,AEMN.SI,11586.286,Real Estate
+Sinarmas Land,A26,SINA.SI,1160.076,Real Estate
+Aspial,A30,ASPA.SI,245.388,Real Estate
+Addvalue Tech,A31,AVAU.SI,30.121,Technology Equipment
+Blumont,A33,BLUM.SI,110.283,Real Estate
+Amara,A34,AMRA.SI,204.812,Cyclical Consumer Services
+Thomson Medical,A50,THOS.SI,2194.604,Healthcare Services
+Asia Enterprises,A55,AEHL.SI,52.997,Mineral Resources
+Kep Infra Tr,A7RU,KEPL.SI,2795.107,Chemicals
+Frasers HTrust,ACV,FRHO.SI,857.103,Real Estate
+First Sponsor,ADN,FSCA.SI,1224.729,Real Estate
+TheHourGlass,AGS,HRGS.SI,1332.472,Retailers
+IFAST,AIY,IFAS.SI,1816.979,Financial Technology (Fintech) & Infrastructure
+Ouhua Energy,AJ2,OUEH.SI,25.914,Energy - Fossil Fuels
+Keppel DC Reit,AJBU,KEPE.SI,3671.195,Real Estate
+Riverstone,AP4,RVHL.SI,1041.825,Healthcare Services
+CapLand China T,AU8U,CAPA.SI,1946.968,Real Estate
+Golden Energy,AUE,GOLD.SI,701.865,Energy - Fossil Fuels
+Boustead Proj,AVM,BOUS.SI,313.6,Industrial & Commercial Services
+HL Global Ent,AVX,HLGE.SI,28.644,Cyclical Consumer Services
+First Reit,AW9U,FRET.SI,491.362,Real Estate
+Brook Crompton,AWC,BROO.SI,22.162,Industrial Goods
+SP Corp,AWE,SPPS.SI,24.218,Retailers
+AEI,AWG,AEIC.SI,97.288,Mineral Resources
+Thakral,AWI,THAK.SI,72.628,Real Estate
+Fuxing China,AWK,FXCG.SI,14.774,Cyclical Consumer Products
+Shanghai Turbo,AWM,SHTU.SI,8.345,Industrial Goods
+GYP Properties,AWS,GYPP.SI,40.824,Real Estate
+Captii,AWV,CAPT.SI,13.422,Telecommunications Services
+AEM SGD,AWX,AEM.SI,1405.147,Technology Equipment
+Multi-Chem,AWZ,MCHE.SI,159.468,Technology Equipment
+Yongnam,AXB,YNAM.SI,27.629,Industrial & Commercial Services
+Global Testing,AYN,GTCL.SI,22.226,Technology Equipment
+Acma,AYV,ACMA.SI,1.441,Industrial Goods
+IPC Corp,AZA,IPCC.SI,10.917,Cyclical Consumer Services
+NutryFarm,AZT,NUTR.SI,9.969,Food & Beverages
+Ban Leong,B26,BANL.SI,43.105,Technology Equipment
+Bonvests,B28,BVHS.SI,381.441,Cyclical Consumer Services
+World Precision,B49,WPML.SI,137.205,Industrial Goods
+Banyan Tree,B58,BANY.SI,270.384,Cyclical Consumer Services
+Bukit Sembawang,B61,BSES.SI,1291.968,Real Estate
+Broadway Ind,B69,BRWY.SI,87.304,Industrial Goods
+Global Inv,B73,GLNV.SI,265.472,Collective Investments
+CosmoSteel,B9S,COSM.SI,27.007,Mineral Resources
+Lion Asiapac,BAZ,LIAS.SI,29.198,Mineral Resources
+Hor Kew,BBP,HKEW.SI,11.194,Industrial & Commercial Services
+Azeus,BBW,AZEU.SI,217.338,Software & IT Services
+China Yuanbang,BCD,CYBP.SI,12.42,Real Estate
+Qian Hu,BCV,QIAN.SI,25.543,Food & Beverages
+Powermatic Data,BCY,PMDS.SI,102.396,Technology Equipment
+Travelite,BCZ,TRHL.SI,5.68,Retailers
+PNE Industries,BDA,PNEI.SI,66.294,Industrial Goods
+Excelpoint,BDF,EXCE.SI,181.203,Technology Equipment
+Willas-Array,BDR,0854.HK,326.885,Technology Equipment
+Federal Int,BDU,FEDL.SI,13.373,Energy - Fossil Fuels
+GSH,BDX,GSHC.SI,347.958,Cyclical Consumer Services
+BRC Asia,BEC,BRCA.SI,449.842,Cyclical Consumer Products
+China Intl,BEH,CHNA.SI,19.956,Industrial & Commercial Services
+LHT,BEI,LHTH.SI,35.142,Applied Resources
+JB Foods,BEW,JBFO.SI,156.756,Food & Beverages
+Beng Kuang,BEZ,BENK.SI,15.937,Industrial & Commercial Services
+Tiong Seng,BFI,TISE.SI,59.751,Industrial & Commercial Services
+Pharmesis Intl,BFK,PHAR.SI,2.79,Pharmaceuticals & Medical Research
+Fabchem China,BFT,FBCH.SI,2.978,Chemicals
+Tye Soon,BFU,TYES.SI,30.543,Automobiles & Auto Parts
+China Mining,BHD,CMIL.SI,14.114,Real Estate
+SIIC Environment,BHK,SIIC.SI,614.601,Utilities
+SUTL Enterprise,BHU,SUTL.SI,39.584,Cyclical Consumer Services
+Vibrant Group,BIP,VIBR.SI,64.212,Transportation
+Ellipsiz,BIX,ELPZ.SI,53.628,Technology Equipment
+VibroPower,BJD,VIBO.SI,4.785,Utilities
+Shinvest,BJW,SHIN.SI,98.687,Industrial Goods
+Koda,BJZ,KODA.SI,57.873,Cyclical Consumer Products
+Sin Heng Mach,BKA,SIHM.SI,47.679,Industrial Goods
+Luxking,BKK,LUKG.SI,3.396,Chemicals
+Shenshan,BKV,CHIS.SI,20.636,Food & Beverages
+Datapulse Tech,BKW,DATA.SI,19.352,Real Estate
+Yongmao,BKX,YNMH.SI,63.532,Industrial Goods
+Suntar Eco-City,BKZ,SECL.SI,9.797,Pharmaceuticals & Medical Research
+Union Steel,BLA,UNIS.SI,22.249,Mineral Resources
+Hai Leck,BLH,HLHL.SI,100.834,Energy - Fossil Fuels
+Darco Water Tech,BLR,DRWT.SI,12.01,Utilities
+Hotung Inv,BLS,HOTU.SI,219.815,Banking & Investment Services
+GRP,BLU,GRPS.SI,14.528,Automobiles & Auto Parts
+Global Palm Res,BLW,GPRL.SI,46.922,Food & Beverages
+BHG Retail Reit,BMGU,BHGR.SI,289.534,Real Estate
+Valuetronics,BN2,VLUE.SI,227.281,Technology Equipment
+Keppel Corp,BN4,KPLM.SI,10286.151,Consumer Goods Conglomerates
+Kencana Agri,BNE,KCAL.SI,47.084,Food & Beverages
+Informatics,BOU,INFO.SI,3.724,Personal & Household Products & Services
+YHI Intl,BPF,YHII.SI,143.225,Automobiles & Auto Parts
+A-Smart,BQC,ASMA.SI,19.378,Industrial & Commercial Services
+Envictus,BQD,ETIK.SI,31.017,Cyclical Consumer Services
+XMH,BQF,XMHL.SI,10.306,Industrial Goods
+Tiong Woon,BQM,TION.SI,109.151,Industrial Goods
+BH Global,BQN,BHGC.SI,69,Industrial Goods
+Southern Pkg,BQP,SOUT.SI,27.966,Applied Resources
+Sapphire,BRD,SAPP.SI,27.151,Industrial & Commercial Services
+USP Group,BRS,USPG.SI,5.092,Energy - Fossil Fuels
+YZJ Shipbldg SGD,BS6,YAZG.SI,5097.042,Industrial Goods
+Raffles Medical,BSL,RAFG.SI,2395.512,Healthcare Services
+Bund Center,BTE,BCIL.SI,391.652,Real Estate
+HG Metal,BTG,HGMM.SI,48.326,Mineral Resources
+A-Sonic Aero,BTJ,ASON.SI,38.939,Transportation
+Penguin Intl,BTM,PGUN.SI,133.203,Transportation
+ManulifeReit USD,BTOU,MANU.SI,1131.43,Real Estate
+Baker Technology,BTP,BATE.SI,81.151,Energy - Fossil Fuels
+Anchun Intl,BTX,ANIH.SI,11.548,Industrial Goods
+Frasers L&C Tr,BUOU,FRAE.SI,5049.993,Real Estate
+Top Glove,BVA,TPGC.KL,17480.951,Healthcare Services
+AIMS Property,BVP,APW.AX,53.747,Real Estate
+Procurri,BVQ,PROC.SI,87.153,Software & IT Services
+EC World Reit,BWCU,ECWO.SI,582.834,Real Estate
+Zheneng Jinjiang,BWM,ZHEN.SI,643.315,Industrial & Commercial Services
+CDW,BXE,CDWH.SI,67.696,Technology Equipment
+Casa,C04,CASA.SI,20.983,Cyclical Consumer Products
+Chemical Ind,C05,CHEM.SI,56.2,Chemicals
+CSC,C06,CSCH.SI,50.237,Industrial & Commercial Services
+Jardine C&C,C07,JCYC.SI,7973.171,Automobiles & Auto Parts
+CityDev,C09,CTDM.SI,6410.574,Real Estate
+CH Offshore,C13,CHOF.SI,33.649,Energy - Fossil Fuels
+Chip Eng Seng,C29,CESE.SI,354.328,Real Estate
+ParkwayLife Reit,C2PU,PWLR.SI,2897.959,Real Estate
+Chuan Hup,C33,CHHS.SI,203.044,Real Estate
+CapLand IntCom T,C38U,CMLT.SI,12820.72,Real Estate
+Cortina,C41,CORT.SI,629.198,Retailers
+ComfortDelGro,C52,CMDG.SI,2947.729,Transportation
+SIA,C6L,SIAL.SI,14887.718,Transportation
+Creative,C76,CREA.SI,164.796,Technology Equipment
+Sinostar Pec,C9Q,SNSR.SI,184.531,Energy - Fossil Fuels
+StarHub,CC3,STAR.SI,2233.83,Telecommunications Services
+Dasin Retail Tr,CEDU,DASI.SI,248.588,Real Estate
+Uni-Asia Grp,CHJ,UAFC.SI,87.525,Real Estate
+HRnetGroup,CHZ,HRNE.SI,768.669,Industrial & Commercial Services
+Courage Inv,CIN,1145.HK,274.556,Transportation
+NetLink NBN Tr,CJLU,NETL.SI,3780.062,Telecommunications Services
+B&M Hldg,CJN,BMHL.SI,25.924,Banking & Investment Services
+APAC Realty,CLN,APAC.SI,229.103,Real Estate
+KepPacOakReitUSD,CMOU,KPEL.SI,769.638,Real Estate
+MindChamps,CNE,MIND.SI,57.984,Personal & Household Products & Services
+Sasseur Reit,CRPU,SASS.SI,967.61,Real Estate
+Hong Lai Huat,CTO,HONL.SI,48.16,Real Estate
+Cromwell Reit EUR,CWBU,,,
+Cromwell Reit SGD,CWCU,CROM.SI,1301.623,Real Estate
+Ascendas-iTrust,CY6U,AINT.SI,1500.303,Real Estate
+DairyFarm USD,D01,DAIR.SI,3613.259,Food & Drug Retailing
+Del Monte Pac,D03,DMPL.SI,1220.207,Food & Beverages
+DBS,D05,DBSM.SI,91084.141,Banking & Investment Services
+Lippo Malls Tr,D5IU,LMRT.SI,406.687,Real Estate
+FSL Trust,D8DU,FSLT.SI,142.388,Transportation
+DigiCore Reit USD,DCRU,DIGT.SI,1316.668,Real Estate
+Daiwa Hse Log Tr,DHLU,DAIW.SI,543.375,Real Estate
+Hanwell,DM0,HANW.SI,228.399,Applied Resources
+Mermaid Maritime,DU4,MMPC.SI,99.769,Energy - Fossil Fuels
+The Place Hldg,E27,THEP.SI,370.481,Cyclical Consumer Services
+Frencken,E28,FREN.SI,700.322,Industrial Goods
+Wee Hur,E3B,WHHL.SI,180.632,Industrial & Commercial Services
+Golden Agri-Res,E5H,GAGR.SI,3127.09,Food & Beverages
+Samko Timber,E6R,SAMT.SI,50.125,Applied Resources
+Roxy-Pacific,E8Z,RXYP.SI,630.194,Real Estate
+First Resources,EB5,FRLD.SI,2598.671,Food & Beverages
+UOA,EH5,UOS.AX,320.607,Real Estate
+KSH,ER0,KSHH.SI,193.71,Industrial & Commercial Services
+Food Empire,F03,FEMP.SI,360.978,Food & Beverages
+Fu Yu,F13,FUYU.SI,203.309,Industrial Goods
+GuocoLand,F17,GUOC.SI,1763.226,Real Estate
+Low Keng Huat,F1E,LKH.SI,328.773,Industrial & Commercial Services
+Wilmar Intl,F34,WLIL.SI,27185.092,Food & Beverages
+COSCO SHP SG,F83,COSC.SI,559.811,Transportation
+MYP,F86,MYPL.SI,116.25,Real Estate
+F & N,F99,FRNM.SI,2020.434,Food & Beverages
+Boustead,F9D,BTSS.SI,485.065,Industrial & Commercial Services
+Jasper Inv,FQ7,JASP.SI,8.708,Energy - Fossil Fuels
+Great Eastern,G07,GELA.SI,9987.032,Insurance
+Nam Lee Metal,G0I,NLPM.SI,84.092,Cyclical Consumer Products
+Genting Sing,G13,GENS.SI,8889.109,Cyclical Consumer Services
+GP Industries,G20,GPEI.SI,328.456,Industrial Goods
+G K Goh,G41,GKHS.SI,371.873,Banking & Investment Services
+Grand Banks,G50,GBYL.SI,57.237,Cyclical Consumer Products
+China Aviation,G92,CNAO.SI,805.219,Energy - Fossil Fuels
+Haw Par,H02,HPAR.SI,2569.875,Pharmaceuticals & Medical Research
+Stamford Land,H07,SFLD.SI,533.829,Cyclical Consumer Services
+Hotel Royal,H12,HTRS.SI,301.392,Cyclical Consumer Services
+Ho Bee Land,H13,HBEE.SI,1969.346,Real Estate
+HPL,H15,HPPS.SI,1731.348,Cyclical Consumer Services
+Hotel Grand,H18,HGCS.SI,761.609,Cyclical Consumer Services
+Hwa Hong,H19,HWHS.SI,215.656,Real Estate
+Hoe Leong,H20,HLEC.SI,18.813,Industrial Goods
+Hong Leong Asia,H22,HLAA.SI,605.804,Automobiles & Auto Parts
+Hong Fok,H30,HONG.SI,635.547,Real Estate
+HongkongLand USD,H78,HKLD.SI,12512.677,Real Estate
+AMTD IB OV,HKB,,,
+Ascott Trust,HMN,ASCO.SI,3342.078,Real Estate
+Intraco,I06,ITRS.SI,51.177,Industrial & Commercial Services
+ISDN,I07,ISDN.SI,282.922,Industrial Goods
+Renaissance United,I11,RENA.SI,12.362,Utilities
+Isetan,I15,ISET.SI,152.212,Retailers
+IFS Capital,I49,IFAC.SI,69.554,Banking & Investment Services
+PEC,IX2,PECL.SI,141.232,Energy - Fossil Fuels
+Axington R,IXOR,,,
+Jadason,J03,JADA.SI,16.615,Technology Equipment
+Hock Lian Seng,J2T,HLSG.SI,133.147,Industrial & Commercial Services
+JMH USD,J36,JARD.SI,42469.977,Consumer Goods Conglomerates
+Frasers Cpt Tr,J69U,FCRT.SI,3827.557,Real Estate
+CDL HTrust,J85,CDLT.SI,1385.066,Real Estate
+ESR-REIT,J91U,ESRR.SI,1712.859,Real Estate
+Grand Venture,JLB,GRAN.SI,319.203,Industrial Goods
+Lendlease Reit,JYEU,LEND.SI,977.15,Real Estate
+Khong Guan,K03,KHON.SI,38.203,Food & Beverages
+TTJ,K1Q,TTJH.SI,59.85,Industrial & Commercial Services
+Karin Tech,K29,KARI.SI,64.027,Technology Equipment
+ARA LOGOS Log Tr,K2LU,ARAL.SI,1198.619,Real Estate
+Prudential USD,K6S,PRU.L,34131.582,Insurance
+Keppel Reit,K71U,KASA.SI,4138.869,Real Estate
+Koh Bros,K75,KBRO.SI,70.518,Industrial & Commercial Services
+BBR,KJ5,BBRS.SI,42.537,Industrial & Commercial Services
+Intl Cement,KUO,INTN.SI,160.573,Mineral Resources
+Manhattan Res,L02,MANH.SI,123.029,Utilities
+Lian Beng,L03,LIBG.SI,272.826,Industrial & Commercial Services
+Lung Kee Bermuda,L09,0255.HK,2450.908,Industrial Goods
+Lum Chang,L19,LUCS.SI,159.787,Industrial & Commercial Services
+Enviro-Hub,L23,EHHL.SI,107.31,Industrial & Commercial Services
+AF Global,L38,AFGL.SI,108.731,Cyclical Consumer Services
+Eagle HTrust USD,LIW,EAGL.SI,119.567,Real Estate
+OUE,LJ3,OVES.SI,1256.115,Real Estate
+Leader Env,LS9,LETL.SI,97.667,Industrial & Commercial Services
+Raffles Infrastructure,LUY,RAFL.SI,7.364,Industrial & Commercial Services
+Metro,M01,MTHL.SI,615.346,Retailers
+Man Oriental USD,M04,MOIL.SI,2729.524,Cyclical Consumer Services
+MTQ,M05,MTLS.SI,51.876,Energy - Fossil Fuels
+MFG Integration,M11,MITD.SI,12.993,Technology Equipment
+Maruwa Yen1k,M12,5344.T,180136.313,Technology Equipment
+InnoTek,M14,INTK.SI,168.96,Technology Equipment
+Sabana Reit,M1GU,SABA.SI,470.778,Real Estate
+Mapletree Log Tr,M44U,MAPL.SI,8075.71,Real Estate
+Mapletree Ind Tr,ME8U,MAPI.SI,6647.337,Real Estate
+Mun Siong Engg,MF6,MSEL.SI,28.496,Industrial & Commercial Services
+Nordic,MR7,NRGL.SI,154,Industrial & Commercial Services
+Mewah Intl,MV4,MEWI.SI,559.51,Food & Beverages
+EliteComREIT GBP,MXNU,ELIE.SI,313.809,Real Estate
+Nanofilm,MZH,NANO.SI,1877.544,Chemicals
+NeraTel,N01,NERA.SI,40.171,Technology Equipment
+NSL,N02,NATS.SI,313.789,Mineral Resources
+New Toyo,N08,NTYO.SI,84.37,Applied Resources
+Combine Will,N0Z,CWIHx.SI,25.701,Cyclical Consumer Products
+Mapletree Com Tr,N2IU,MACT.SI,5980.236,Real Estate
+Nomura Yen1k,N33,8604.T,1742566.875,Banking & Investment Services
+Sri Trang Agro,NC2,STA.BK,47616,Automobiles & Auto Parts
+Dyna-Mac,NO4,DMHL.SI,96.496,Industrial Goods
+MSC,NPW,MSCB.KL,1457.4,Mineral Resources
+Raffles Edu,NR7,RLSE.SI,99.174,Academic & Educational Services
+HPH Trust USD,NS8U,HPHT.SI,2047.109,Transportation
+Novo Tellus SPAC,NTA,,,
+NovoTellusSPAC U,NTU,,,
+Ossia Intl,O08,OSSA.SI,28.042,Retailers
+Far East Orchard,O10,FARE.SI,510.988,Cyclical Consumer Services
+Olam Intl,O32,OLAM.SI,6304.004,Food & Beverages
+OCBC Bank,O39,OCBC.SI,56299.094,Banking & Investment Services
+AIMS APAC Reit,O5RU,AIMA.SI,989.704,Real Estate
+Lonza,O6Z,LONN.S,47674.895,Pharmaceuticals & Medical Research
+Parkson Retail,O9E,PRAL.SI,7.45,Retailers
+UtdHampshReitUSD,ODBU,UNIE.SI,342.785,Real Estate
+Centurion,OU8,CNCL.SI,273.253,Real Estate
+Sheng Siong,OV8,SHEN.SI,2240.27,Food & Drug Retailing
+Prime US ReitUSD,OXMU,PRIE.SI,905.349,Real Estate
+PropNex,OYY,PROP.SI,595.7,Real Estate
+Pacific Century,P15,PCEN.SI,1072.501,Holding Companies
+Delfi,P34,DELF.SI,443.576,Food & Beverages
+Pan Hong,P36,PANH.SI,75.317,Real Estate
+StarhillGbl Reit,P40U,STHL.SI,1384.194,Real Estate
+PanUnited,P52,PANU.SI,235.169,Mineral Resources
+ChinaKangdaFood,P74,0834.HK,162.433,Food & Beverages
+HPH Trust SGD,P7VU,,,
+Cordlife,P8A,CORD.SI,98.984,Healthcare Services
+Bumitama Agri,P8Z,BUMI.SI,963.085,Food & Beverages
+Civmec,P9D,CIVM.SI,318.925,Industrial & Commercial Services
+TA,PA3,TACO.SI,33.674,Real Estate
+Pegasus SPAC,PGS,,,
+Pegasus SPAC U,PGU,,,
+Murata Yen1k,PJX,6981.T,5826870.5,Industrial Goods
+QAF,Q01,QAFS.SI,509.113,Food & Beverages
+IHH,Q0F,IHHH.KL,56749.773,Healthcare Services
+Far East HTrust,Q5T,FAEH.SI,1097.599,Real Estate
+Q&M Dental,QC7,QMDT.SI,550.543,Healthcare Services
+ChinaSunsine,QES,CHSN.SI,454.643,Chemicals
+G Invacom,QS9,GLOB.SI,19.374,Technology Equipment
+Mapletree LogTr A,RCQU,,,
+Geo Energy Res,RE4,GEOE.SI,515.335,Energy - Fossil Fuels
+RHT HealthTrust,RF1U,RHTH.SI,15.568,Real Estate
+Overseas Edu,RQ1,OVER.SI,105.918,Academic & Educational Services
+China Env Res,RS1,1130.HK,120.156,Industrial & Commercial Services
+Mapletree NAC Tr,RW0U,MAPE.SI,3810.212,Real Estate
+Shangri-La HKD,S07,0069.HK,21810.344,Cyclical Consumer Services
+SingPost,S08,SPOS.SI,1460.882,Transportation
+SingShipping,S19,SSHP.SI,111.352,Industrial Goods
+Straits Trading,S20,STCM.SI,1358.72,Mineral Resources
+Spura Finance,S23,SBDS.SI,131.709,Banking & Investment Services
+Stamford Tyres,S29,STAS.SI,44.154,Automobiles & Auto Parts
+Tosei,S2D,8923.T,52091.664,Real Estate
+Sing Inv & Fin,S35,SINV.SI,238.015,Banking & Investment Services
+OKH Global,S3N,OKHG.SI,29.345,Industrial & Commercial Services
+Hong Leong Fin,S41,HLSF.SI,1088.214,Banking & Investment Services
+EnGro,S44,ENGR.SI,157.874,Mineral Resources
+Sembcorp Marine,S51,SCMN.SI,3088.687,Industrial Goods
+SamuderaShipping,S56,SAMU.SI,268.014,Transportation
+SATS,S58,SATS.SI,4402.756,Transportation
+SIA Engineering,S59,SIAE.SI,2405.609,Transportation
+SBS Transit,S61,SBVV.SI,907.527,Transportation
+ST Engineering,S63,STEG.SI,11626.357,Industrial Goods
+SGX,S68,SGXL.SI,9976.987,Banking & Investment Services
+Serial System,S69,SERL.SI,101.765,Industrial Goods
+Sunright,S71,SNRT.SI,49.122,Technology Equipment
+Asian Pay Tv Tr,S7OU,ASIA.SI,245.664,Cyclical Consumer Services
+Soilbuild Const,S7P,SOIL.SI,52.157,Industrial & Commercial Services
+Straco,S85,STRA.SI,364.95,Cyclical Consumer Services
+Amcorp Global,S9B,AMCO.SI,44.688,Real Estate
+SPHREIT,SK6U,SPHR.SI,2690.309,Real Estate
+YZJ Shipbldg CNY,SO7,,,
+Sri Trang Gloves,STG,STGT.BK,85897.844,Healthcare Services
+Tat Seng Pkg,T12,TASE.SI,119.472,Applied Resources
+RH PetroGas,T13,RHPG.SI,145.363,Energy - Fossil Fuels
+Tianjin ZX USD,T14,TIAN.SI,2532.525,Pharmaceuticals & Medical Research
+Tuan Sing,T24,TSHS.SI,540.199,Real Estate
+SPH,T39,SPRM.SI,3821.761,Cyclical Consumer Services
+TeleChoice Intl,T41,TCIN.SI,77.252,Technology Equipment
+Yunnan Energy,T43,1298.HK,297.472,Technology Equipment
+TIH,T55,TIHL.SI,53.171,Collective Investments
+ValueMax,T6I,VAMG.SI,244.477,Retailers
+Suntec Reit,T82U,SUNT.SI,4358.816,Real Estate
+CreditBureauAsia,TCU,CRED.SI,244.213,Industrial & Commercial Services
+Frasers Property,TQ5,FRPL.SI,4338.283,Real Estate
+OUE Com Reit,TS0U,OUEC.SI,2231.469,Real Estate
+SingaporeLandGrp,U06,SIND.SI,3724.935,Real Estate
+Avarga,U09,AVAR.SI,256.539,Cyclical Consumer Products
+UOB Kay Hian,U10,UOKH.SI,1398.718,Banking & Investment Services
+UOB,U11,UOBH.SI,50219.438,Banking & Investment Services
+UOI,U13,UOIS.SI,404.846,Insurance
+UOL,U14,UTOS.SI,6155.262,Real Estate
+Sarine Tech,U77,SARI.SI,197.923,Industrial Goods
+Sembcorp Ind,U96,SCIL.SI,4075.609,Utilities
+China Everbright,U9E,CEWL.SI,1771.087,Utilities
+IREIT Global SGD,UD1U,IREI.SI,739.408,Real Estate
+Japfa,UD2,JAPF.SI,1264.145,Food & Beverages
+Venture,V03,VENM.SI,5132.504,Technology Equipment
+Koufu,VL6,KOUF.SI,424.7,Cyclical Consumer Services
+Vertex SPAC,VT1,,,
+Vertex SPAC U,VTA,,,
+Wing Tai,W05,WTHS.SI,1397.312,Real Estate
+VICOM Ltd,WJP,VCOM.SI,719.773,Industrial & Commercial Services
+GHY Culture,XJB,GHYC.SI,536.896,Cyclical Consumer Services
+AEM USD,XWA,,,
+ARA HTrust USD,XZL,ARAU.SI,275.161,Real Estate
+Yeo Hiap Seng,Y03,YHSS.SI,528.643,Food & Beverages
+Green Build,Y06,GREE.SI,3.679,Industrial & Commercial Services
+AnAn Intl,Y35,ANAN.SI,71.55,Energy - Fossil Fuels
+MDR Limited,Y3D,MDRT.SI,61.681,Retailers
+SMI Vantage,Y45,SMIV.SI,29.614,Banking & Investment Services
+ThaiBev,Y92,TBEV.SI,16506.225,Food & Beverages
+Yanlord Land,Z25,YNLG.SI,2228.144,Real Estate
+Yoma Strategic,Z59,YOMA.SI,298.095,Real Estate
+Singtel,Z74,STEL.SI,40130.477,Telecommunications Services
+Singtel 10,Z77,,,
