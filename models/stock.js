@@ -12,4 +12,4 @@ const StockSchema = new Schema({
   },
 });
 
-export default mongoose.model("User", StockSchema);
+export default mongoose.model("Stock", StockSchema);
