@@ -30,7 +30,6 @@ const Dashboard = () => {
     const updateStockOverview = async () => {
       try {
         const result = await fetchQuote(stockSymbol);
-        console.log(result);
         setQuote(result);
       } catch (error) {
         setQuote({});
