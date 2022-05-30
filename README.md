@@ -3,9 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Marcusgwj/iPredict">
-    <img src="images/5143.jpg" alt="Logo" width="80" height="80">
-  </a>
+  <img src="images/5143.jpg" alt="Logo" width="400" height="400">
 
 <h3 align="center">iPredict</h3>
 
@@ -69,7 +67,6 @@
 - [x] Sign up page
 - [x] Authentication features
 - [x] Live display of stock prices
-- [x] Display of stock chart
 - [x] Display of stock chart
 - [x] Data mining from Yahoo Finance
 - [x] Model training for stock predictions
