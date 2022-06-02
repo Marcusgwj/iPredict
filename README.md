@@ -35,7 +35,9 @@
 
 ## About The Project
 
-We aim to make a user-friendly website to easily visualise and understand stock predictions. We want users to make more informed decision before buying or selling their stocks.
+We aim to make a user-friendly website to easily visualise and understand stock predictions.
+We want to help users make a more informed decision when buying or selling their stocks.
+We also want to make stock predictions less intimidating for the general public.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -56,12 +58,12 @@ We aim to make a user-friendly website to easily visualise and understand stock 
 
 ## Usage
 
-- [Sign in](https://ipredict.herokuapp.com/signin) with test account:
+[Sign in](https://ipredict.herokuapp.com/signin) with test account:
 
-* Email: test@gmail.com
-* Password: test123
+- Email: test@gmail.com
+- Password: test123
 
-- Or [Sign up](https://ipredict.herokuapp.com/signup) for your account
+Or [Sign up](https://ipredict.herokuapp.com/signup) for your account
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -86,7 +88,5 @@ We aim to make a user-friendly website to easily visualise and understand stock 
 
 - Marcus - https://github.com/Marcusgwj
 - Hans - https://github.com/hansneddyanto
-
-Project Link: [https://github.com/Marcusgwj/iPredict](https://github.com/Marcusgwj/iPredict)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
