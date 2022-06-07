@@ -15,6 +15,10 @@ const UserSchema = new Schema({
     type: String,
     required: true,
   },
+  portfolio: {
+    type: Schema.Types.ObjectId,
+    ref: "Portfolio",
+  },
 });
 
 export default mongoose.model("User", UserSchema);

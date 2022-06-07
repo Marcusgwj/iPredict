@@ -61,7 +61,7 @@ const Search = () => {
         <SearchIcon className="h-4 w-4 fill-gray-100" />
       </button>
       {input && bestMatches.length > 0 ? (
-        <SearchResults results={bestMatches} />
+        <SearchResults results={bestMatches} clear={clear} />
       ) : null}
     </div>
   );

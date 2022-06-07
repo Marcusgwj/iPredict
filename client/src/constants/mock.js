@@ -61,3 +61,23 @@ export const mockHistoricalData = {
   t: [1569297600, 1569384000, 1569470400],
   v: [33463820, 24018876, 20730608],
 };
+
+export const mockInsiderSentiment = {
+  data: [
+    {
+      symbol: "TSLA",
+      year: 2021,
+      month: 3,
+      change: 5540,
+      mspr: 12.209097,
+    },
+    {
+      symbol: "TSLA",
+      year: 2022,
+      month: 1,
+      change: -1250,
+      mspr: -5.6179776,
+    },
+  ],
+  symbol: "TSLA",
+};

@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import ChartFilter from "./ChartFilter";
-import Card from "./Card";
+import Card from "../Card/Card";
 import {
   Area,
   XAxis,
@@ -15,9 +15,9 @@ import { fetchHistoricalData } from "../../utils/api/stock-api";
 import {
   createDate,
   convertDateToUnixTimestamp,
-  convertUnixTimestampToDate,
+  convertUnixToShortDate,
 } from "../../utils/helpers/date-helper";
-import { chartConfig } from "../../constants/config";
+import { chartConfig } from "../../constants/ChartConfig";
 
 const Chart = () => {
   const [filter, setFilter] = useState("1W");
@@ -32,7 +32,7 @@ const Chart = () => {
     return data.c.map((item, index) => {
       return {
         value: item.toFixed(2),
-        date: convertUnixTimestampToDate(data.t[index]),
+        date: convertUnixToShortDate(data.t[index]),
       };
     });
   };
@@ -112,7 +112,7 @@ const Chart = () => {
             fillOpacity={1}
             strokeWidth={0.5}
           />
-          <XAxis dataKey="date" />
+          <XAxis dataKey="date" tick={{ fontSize: 13 }} />
           <YAxis domain={["dataMin", "dataMax"]} />
         </AreaChart>
       </ResponsiveContainer>

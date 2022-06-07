@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from "../Card/Card";
 
 const Overview = ({ symbol, price, change, changePercent, currency }) => {
   return (
