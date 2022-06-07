@@ -41,7 +41,7 @@ const theme = createTheme({
   },
 });
 
-export default function Register() {
+export default function SignUp() {
   const [credentials, setCredentials] = useState({
     email: undefined,
     username: undefined,
@@ -65,9 +65,9 @@ export default function Register() {
     e.preventDefault();
     dispatch({ type: "REGISTER_START" });
     try {
-      const res = await axiosInstance.post("/api/auth/register", credentials);
+      const res = await axiosInstance.post("/auth/register", credentials);
       dispatch({ type: "REGISTER_SUCCESS", payload: res.data.details });
-      navigate("/login");
+      navigate("/signin");
     } catch (err) {
       setMsg({ fail: true, msg: err.response.data.message });
       dispatch({ type: "REGISTER_FAILURE", payload: err.response.data });
@@ -154,7 +154,7 @@ export default function Register() {
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="/login" variant="body2">
+                <Link href="/signin" variant="body2">
                   Already have an account? Sign in
                 </Link>
               </Grid>

@@ -43,7 +43,7 @@ const theme = createTheme({
   },
 });
 
-function Login() {
+function SignIn() {
   const [credentials, setCredentials] = useState({
     email: undefined,
     password: undefined,
@@ -66,7 +66,7 @@ function Login() {
     e.preventDefault();
     dispatch({ type: "LOGIN_START" });
     try {
-      const res = await axiosInstance.post("/api/auth/login", credentials);
+      const res = await axiosInstance.post("/auth/login", credentials);
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data.username });
       navigate("/");
     } catch (err) {
@@ -146,7 +146,7 @@ function Login() {
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="/register" variant="body2">
+                <Link href="/signup" variant="body2">
                   {"Don't have an account? Sign Up"}
                 </Link>
               </Grid>
@@ -169,4 +169,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default SignIn;

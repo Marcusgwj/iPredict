@@ -1,4 +1,4 @@
-import Search from "./Search";
+import Search from "../Search/Search";
 import ThemeIcon from "./ThemeIcon";
 
 const Header = ({ name }) => {

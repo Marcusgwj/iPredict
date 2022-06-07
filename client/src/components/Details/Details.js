@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import Card from "./Card";
+import Card from "../Card/Card";
 import ThemeContext from "../../context/ThemeContext";
 
 const Details = ({ details }) => {
@@ -30,7 +30,7 @@ const Details = ({ details }) => {
           return (
             <li key={item} className="flex-1 flex justify-between items-center">
               <span>{detailsList[item]}</span>
-              <span className="font-bold">
+              <span className="font-bold text-right">
                 {item === "marketCapitalization"
                   ? `${convertMillionToBillion(details[item])}B`
                   : details[item]}

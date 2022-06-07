@@ -1,9 +1,9 @@
 import { useContext, useEffect, useState } from "react";
 import ThemeContext from "../../context/ThemeContext";
-import Overview from "./Overview";
-import Details from "./Details";
-import Chart from "./Chart";
-import Header from "./Header";
+import Overview from "../Overview/Overview";
+import Details from "../Details/Details";
+import Chart from "../Chart/Chart";
+import Header from "../Header/Header";
 import StockContext from "../../context/StockContext";
 import { fetchStockDetails, fetchQuote } from "../../utils/api/stock-api";
 

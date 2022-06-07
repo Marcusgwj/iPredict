@@ -40,13 +40,11 @@ function Navigation() {
           >
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/stocks">Stocks</Nav.Link>
-            <Nav.Link href="/stocks">News(Developing)</Nav.Link>
-            <Nav.Link href="/stocks">Sentiment(Developing)</Nav.Link>
+            <Nav.Link href="/predictions">Predictions</Nav.Link>
+            <Nav.Link href="/news">News</Nav.Link>
+            <Nav.Link href="/sentiment">Sentiment</Nav.Link>
 
-            <NavDropdown
-              title="Portfolio(Developing)"
-              id="navbarScrollingDropdown"
-            >
+            <NavDropdown title="Portfolio" id="navbarScrollingDropdown">
               <NavDropdown.Item href="/stocks">Action</NavDropdown.Item>
               <NavDropdown.Item href="/stocks">Another action</NavDropdown.Item>
               <NavDropdown.Divider />
@@ -88,14 +86,14 @@ function Navigation() {
           ) : (
             <div>
               <Button
-                href="/login"
+                href="/signin"
                 variant="outline-light"
                 style={{ marginLeft: "10px" }}
               >
                 Sign in
               </Button>
               <Button
-                href="/register"
+                href="/signup"
                 variant="outline-light"
                 style={{ marginLeft: "10px" }}
               >
