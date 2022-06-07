@@ -68,11 +68,13 @@ const Insider = () => {
 
   const popupString = (
     <div>
-      Insider sentiment give us some insight into <br />
-      the executives's opinion regarding their company's stock. <br />
+      Insider sentiment give us some insight into the executives's opinion
+      regarding their company's stock. <br />
       This is measured using{" "}
-      <a href="https://bit.ly/3mn7lKI">Monthly Share Purchase Ratio</a>
+      <a href="https://bit.ly/3mn7lKI">Monthly Share Purchase Ratio.</a>
       <br />
+      Insider sentiment is considered positive if its corporate’s shares are
+      under net purchasing activity. <br />
       You should not rely solely on this tool but use it together with other
       indicators.
     </div>
