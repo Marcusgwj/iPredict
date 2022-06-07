@@ -2,26 +2,39 @@ import User from "../models/User.js";
 import bcrypt from "bcryptjs";
 import { createError } from "../utils/error.js";
 import jwt from "jsonwebtoken";
+import isEmail from "validator/lib/isEmail.js";
+import isStrongPassword from "validator/lib/isStrongPassword.js";
 
 export const register = async (req, res, next) => {
   try {
-    const checkUsername = await User.findOne({ username: req.body.username });
-    const checkEmail = await User.findOne({ email: req.body.email });
-    if (checkUsername) {
-      return next(createError(400, "Username taken"));
-    } else if (checkEmail) {
-      return next(createError(400, "Email taken"));
+    if (!isEmail(req.body.email)) {
+      return next(createError(400, "Invalid email"));
+    } else if (!isStrongPassword(req.body.password)) {
+      return next(
+        createError(
+          400,
+          "Invalid password: Min 8 characters, 1 uppercase, 1 lowercase, 1 number, 1 symbol"
+        )
+      );
     } else {
-      const salt = bcrypt.genSaltSync(10);
-      const hash = bcrypt.hashSync(req.body.password, salt);
+      const checkUsername = await User.findOne({ username: req.body.username });
+      const checkEmail = await User.findOne({ email: req.body.email });
+      if (checkUsername) {
+        return next(createError(400, "Username taken"));
+      } else if (checkEmail) {
+        return next(createError(400, "Email taken"));
+      } else {
+        const salt = bcrypt.genSaltSync(10);
+        const hash = bcrypt.hashSync(req.body.password, salt);
 
-      const newUser = new User({
-        username: req.body.username,
-        email: req.body.email,
-        password: hash,
-      });
-      await newUser.save();
-      res.status(200).send("User has been created.");
+        const newUser = new User({
+          username: req.body.username,
+          email: req.body.email,
+          password: hash,
+        });
+        await newUser.save();
+        res.status(200).send("User has been created.");
+      }
     }
   } catch (err) {
     next(err);
