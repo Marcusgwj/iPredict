@@ -12,7 +12,7 @@ import {
 } from "recharts";
 import ThemeContext from "../../../context/ThemeContext";
 import StockContext from "../../../context/StockContext";
-import { searchSocial } from "../../../utils/api/sentiment-api";
+import { searchSocial } from "../../../utils/api/SentimentApi";
 import {
   createDate,
   convertDateFormat,

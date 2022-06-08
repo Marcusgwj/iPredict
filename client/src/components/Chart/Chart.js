@@ -11,7 +11,7 @@ import {
 } from "recharts";
 import ThemeContext from "../../context/ThemeContext";
 import StockContext from "../../context/StockContext";
-import { fetchHistoricalData } from "../../utils/api/stock-api";
+import { fetchHistoricalData } from "../../utils/api/StockApi";
 import {
   createDate,
   convertDateToUnixTimestamp,
