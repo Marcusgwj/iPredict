@@ -10,8 +10,8 @@ import {
   Legend,
   ReferenceLine,
 } from "recharts";
-import ThemeContext from "../../../context/ThemeContext";
-import StockContext from "../../../context/StockContext";
+import { ThemeContext } from "../../../context/ThemeContext";
+import { StockContext } from "../../../context/StockContext";
 import { searchSocial } from "../../../utils/api/SentimentApi";
 import {
   createDate,
@@ -24,6 +24,7 @@ import Popup from "../../Popup/Popup";
 const Social = () => {
   const { darkMode } = useContext(ThemeContext);
   const { stockSymbol } = useContext(StockContext);
+
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState("twitter");
 
@@ -80,7 +81,7 @@ const Social = () => {
         <Popup content={popupString} />
       </p>
 
-      <ul className="flex absolute top-2 right-2 z-40">
+      <ul className="flex absolute top-2 right-2 z-2">
         {["reddit", "twitter"].map((item) => (
           <li key={item}>
             <SocialFilter

@@ -1,7 +1,7 @@
 import Dashboard from "../../components/Dashboard/Dashboard";
-import Navigation from "../../components/navbar/navbar";
+import Navigation from "../../components/Navbar/Navbar";
 
-function Stocks() {
+function Charts() {
   return (
     <div>
       <Navigation />
@@ -10,4 +10,4 @@ function Stocks() {
   );
 }
 
-export default Stocks;
+export default Charts;

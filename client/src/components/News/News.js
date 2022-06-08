@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { searchNews } from "../../utils/api/NewsAPI";
-import ThemeContext from "../../context/ThemeContext";
-import StockContext from "../../context/StockContext";
+import { ThemeContext } from "../../context/ThemeContext";
+import { StockContext } from "../../context/StockContext";
 import Article from "./Article";
 import { createDate, convertDateFormat } from "../../utils/helpers/date-helper";
 import Header from "../Header/Header";
@@ -12,6 +12,7 @@ import "./News.css";
 const NewsPage = () => {
   const { darkMode } = useContext(ThemeContext);
   const { stockSymbol } = useContext(StockContext);
+
   const [data, setData] = useState([]);
 
   const formatData = (data) => {
@@ -53,7 +54,7 @@ const NewsPage = () => {
         darkMode ? "bg-gray-900 text-gray-300" : "bg-neutral-100"
       }`}
     >
-      <div className=" flex justify-start items-center">
+      <div className=" header">
         <Header name={stockSymbol} />
       </div>
       <Container maxWidth="md">

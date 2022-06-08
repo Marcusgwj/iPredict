@@ -1,9 +1,9 @@
-import Navigation from "../../components/navbar/navbar";
 import NewsPage from "../../components/News/News";
+import Navbar from "../../components/Navbar/Navbar";
 function News() {
   return (
     <div className="h-full">
-      <Navigation />
+      <Navbar />
       <NewsPage />
     </div>
   );

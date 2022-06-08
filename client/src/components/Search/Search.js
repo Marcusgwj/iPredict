@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import ThemeContext from "../../context/ThemeContext";
+import { ThemeContext } from "../../context/ThemeContext";
 import { searchSymbol } from "../../utils/api/StockApi";
 import SearchResults from "./SearchResults";
 import { SearchIcon, XIcon } from "@heroicons/react/solid";
@@ -31,7 +31,7 @@ const Search = () => {
 
   return (
     <div
-      className={`flex items-center my-4 border-2 rounded-md relative z-50 w-96 ${
+      className={`flex items-center my-4 border-2 rounded-md relative z-10 w-96 ${
         darkMode ? "bg-gray-900 border-gray-800" : "bg-white border-neutral-200"
       }`}
     >

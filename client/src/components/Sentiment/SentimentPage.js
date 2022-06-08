@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import ThemeContext from "../../context/ThemeContext";
+import { ThemeContext } from "../../context/ThemeContext";
 import Insider from "./Insider/Insider";
 import Social from "./Social/Social";
 import Header from "../Header/Header";
-import StockContext from "../../context/StockContext";
+import { StockContext } from "../../context/StockContext";
 
 const SentimentPage = () => {
   const { darkMode } = useContext(ThemeContext);

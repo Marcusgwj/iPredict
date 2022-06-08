@@ -1,5 +1,13 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
-const StockContext = createContext();
+export const StockContext = createContext();
 
-export default StockContext;
+export const StockContextProvider = ({ children }) => {
+  const [stockSymbol, setStockSymbol] = useState("AAPL");
+
+  return (
+    <StockContext.Provider value={{ stockSymbol, setStockSymbol }}>
+      {children}
+    </StockContext.Provider>
+  );
+};
