@@ -1,4 +1,4 @@
-import Navigation from "../../components/Navbar/Navbar";
+import Navigation from "../../components/Nav/Navbar";
 import "./Home.css";
 import { FormControl, Form, Button } from "react-bootstrap";
 import { useState } from "react";
