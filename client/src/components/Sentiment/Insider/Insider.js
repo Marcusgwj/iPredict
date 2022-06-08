@@ -11,8 +11,8 @@ import {
   ReferenceLine,
   Cell,
 } from "recharts";
-import ThemeContext from "../../../context/ThemeContext";
-import StockContext from "../../../context/StockContext";
+import { ThemeContext } from "../../../context/ThemeContext";
+import { StockContext } from "../../../context/StockContext";
 import { searchInsider } from "../../../utils/api/SentimentApi";
 import {
   createDate,

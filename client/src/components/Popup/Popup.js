@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import ThemeContext from "../../context/ThemeContext";
+import { ThemeContext } from "../../context/ThemeContext";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Popper from "@mui/material/Popper";

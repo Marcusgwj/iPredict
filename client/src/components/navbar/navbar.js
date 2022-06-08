@@ -1,110 +1,95 @@
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Container,
-  Button,
-} from "react-bootstrap";
-import { useContext, useState } from "react";
+import "./Navbar.css";
+import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useState, useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
-import "./navbar.css";
+import HomeIcon from "@mui/icons-material/Home";
+import CandlestickChartIcon from "@mui/icons-material/CandlestickChart";
+import ArticleIcon from "@mui/icons-material/Article";
+import InsertEmoticonIcon from "@mui/icons-material/InsertEmoticon";
+import SearchIcon from "@mui/icons-material/Search";
+import AddToQueueIcon from "@mui/icons-material/AddToQueue";
 
-function Navigation() {
+const Navbar = () => {
   const { user, dispatch } = useContext(AuthContext);
+
+  const navigate = useNavigate();
   const logout = () => {
     navigate("/");
     dispatch({ type: "LOGOUT" });
   };
-
-  const [ticker, setTicker] = useState("");
-
-  const navigate = useNavigate();
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    navigate(`/stocks/${ticker}`);
-  };
-
+  const [show, setShow] = useState(false);
+  const handleClick = () => setShow(!show);
   return (
-    <Navbar className="bar" variant="dark" expand="lg">
-      <Container fluid>
-        <Navbar.Brand>iPredict</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: "100px" }}
-            navbarScroll
-          >
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/stocks">Stocks</Nav.Link>
-            <Nav.Link href="/predictions">Predictions</Nav.Link>
-            <Nav.Link href="/news">News</Nav.Link>
-            <Nav.Link href="/sentiment">Sentiment</Nav.Link>
+    <>
+      <nav className="nav">
+        <h1 className="heading">iPredict</h1>
 
-            <NavDropdown title="Portfolio" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="/stocks">Action</NavDropdown.Item>
-              <NavDropdown.Item href="/stocks">Another action</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="/stocks">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-          <Form className="d-flex" onSubmit={handleSubmit}>
-            <FormControl
-              type="search"
-              placeholder="Search stock ticker"
-              className="me-2"
-              aria-label="Search"
-              onChange={(e) => setTicker(e.target.value)}
-            />
-            <Button type="submit" variant="outline-light">
-              Search{" "}
-            </Button>
-          </Form>
+        <div className={show ? "navmenu show" : "navmenu"}>
+          <Link to="/" className="navlink">
+            <div className="icon">
+              <HomeIcon /> Home
+            </div>
+          </Link>
+          <Link to="/charts" className="navlink">
+            <div className="icon">
+              <CandlestickChartIcon />
+              Charts
+            </div>
+          </Link>
+          <Link to="/news" className="navlink">
+            <div className="icon">
+              <ArticleIcon />
+              News
+            </div>
+          </Link>
+          <Link to="/sentiment" className="navlink">
+            <div className="icon">
+              <InsertEmoticonIcon />
+              Sentiment
+            </div>
+          </Link>
+          <Link to="/predictions" className="navlink">
+            <div className="icon">
+              <SearchIcon />
+              Predictions
+            </div>
+          </Link>
+          <Link to="/portfolio" className="navlink">
+            <div className="icon">
+              <AddToQueueIcon />
+              Portfolio
+            </div>
+          </Link>
+        </div>
+        <div className="navbtn">
           {user ? (
-            <div>
-              <Button
-                variant="outline-success"
-                style={{ marginLeft: "10px" }}
-                disabled
-              >
+            <>
+              <button disabled className="user">
                 {user}
-              </Button>
-              <Button
-                type="submit"
-                onClick={logout}
-                variant="outline-light"
-                style={{ marginLeft: "5px" }}
-              >
+              </button>
+              <button className="navbtnlink" onClick={() => logout()}>
                 Sign out
-              </Button>
-            </div>
+              </button>
+            </>
           ) : (
-            <div>
-              <Button
-                href="/signin"
-                variant="outline-light"
-                style={{ marginLeft: "10px" }}
-              >
-                Sign in
-              </Button>
-              <Button
-                href="/signup"
-                variant="outline-light"
-                style={{ marginLeft: "10px" }}
-              >
-                Sign up
-              </Button>
-            </div>
+            <>
+              <Link to="/signin" className="navbtnlink">
+                Sign In
+              </Link>
+              <Link to="/signup" className="navbtnlink">
+                Sign Up
+              </Link>
+            </>
           )}
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+        </div>
+        <div className="bars" onClick={handleClick}>
+          {show ? <FaTimes /> : <FaBars />}
+        </div>
+      </nav>
+    </>
   );
-}
+};
 
-export default Navigation;
+export default Navbar;

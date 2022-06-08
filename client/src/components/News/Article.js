@@ -1,6 +1,6 @@
 import "./Article.css";
 import { useContext } from "react";
-import ThemeContext from "../../context/ThemeContext";
+import {ThemeContext} from "../../context/ThemeContext";
 const NewsCard = ({ newsItem }) => {
   const { darkMode } = useContext(ThemeContext);
 

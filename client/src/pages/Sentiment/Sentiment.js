@@ -1,5 +1,5 @@
 import SentimentPage from "../../components/Sentiment/SentimentPage";
-import Navigation from "../../components/navbar/navbar";
+import Navigation from "../../components/Navbar/Navbar";
 
 function Sentiment() {
   return (

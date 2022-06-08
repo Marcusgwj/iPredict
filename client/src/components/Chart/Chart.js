@@ -9,8 +9,8 @@ import {
   AreaChart,
   Tooltip,
 } from "recharts";
-import ThemeContext from "../../context/ThemeContext";
-import StockContext from "../../context/StockContext";
+import { ThemeContext } from "../../context/ThemeContext";
+import { StockContext } from "../../context/StockContext";
 import { fetchHistoricalData } from "../../utils/api/StockApi";
 import {
   createDate,
@@ -71,7 +71,7 @@ const Chart = () => {
 
   return (
     <Card>
-      <ul className="flex absolute top-2 right-2 z-40">
+      <ul className="flex absolute top-2 right-2 z-1">
         {Object.keys(chartConfig).map((item) => (
           <li key={item}>
             <ChartFilter
