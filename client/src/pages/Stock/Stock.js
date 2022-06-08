@@ -1,4 +1,4 @@
-import Navigation from "../../components/Navbar/Navbar";
+import Navigation from "../../components/Nav/Navbar";
 
 function Stock() {
   return (

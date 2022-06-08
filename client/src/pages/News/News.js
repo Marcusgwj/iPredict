@@ -1,5 +1,5 @@
 import NewsPage from "../../components/News/News";
-import Navbar from "../../components/Navbar/Navbar";
+import Navbar from "../../components/Nav/Navbar";
 function News() {
   return (
     <div className="h-full">
