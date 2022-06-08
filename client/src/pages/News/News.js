@@ -1,11 +1,10 @@
-import React from "react";
 import Navigation from "../../components/navbar/navbar";
-
+import NewsPage from "../../components/News/News";
 function News() {
   return (
-    <div>
+    <div className="h-full">
       <Navigation />
-      <h1>News</h1>
+      <NewsPage />
     </div>
   );
 }

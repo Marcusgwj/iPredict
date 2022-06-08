@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import ThemeContext from "../../context/ThemeContext";
-import { searchSymbol } from "../../utils/api/stock-api";
+import { searchSymbol } from "../../utils/api/StockApi";
 import SearchResults from "./SearchResults";
 import { SearchIcon, XIcon } from "@heroicons/react/solid";
 

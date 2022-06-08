@@ -2,7 +2,8 @@ export const groupData = (data) => {
   return groupMentions(
     data.reduce((group, product) => {
       const { atTime } = product;
-      const time = atTime.slice(0, 10);
+      let time = atTime.slice(0, 10);
+      time = time.slice(8) + "/" + time.slice(5, 7) + "/" + time.slice(0, 4);
       group[time] = group[time] ?? [];
       group[time].push(product);
       return group;

@@ -5,7 +5,7 @@ import Details from "../Details/Details";
 import Chart from "../Chart/Chart";
 import Header from "../Header/Header";
 import StockContext from "../../context/StockContext";
-import { fetchStockDetails, fetchQuote } from "../../utils/api/stock-api";
+import { fetchStockDetails, fetchQuote } from "../../utils/api/StockApi";
 
 const Dashboard = () => {
   const { darkMode } = useContext(ThemeContext);
