@@ -26,7 +26,7 @@ const Navbar = () => {
       <nav className="nav">
         <h1 className="heading">iPredict</h1>
 
-        <div className={show ? "navmenu show" : "navmenu"}>
+        <div className={show ? "menu show" : "menu"}>
           <Link to="/" className="navlink">
             <div className="icon">
               <HomeIcon /> Home
@@ -69,16 +69,16 @@ const Navbar = () => {
               <button disabled className="user">
                 {user}
               </button>
-              <button className="navbtnlink" onClick={() => logout()}>
+              <button className="btnlink" onClick={() => logout()}>
                 Sign out
               </button>
             </>
           ) : (
             <>
-              <Link to="/signin" className="navbtnlink">
+              <Link to="/signin" className="btnlink">
                 Sign In
               </Link>
-              <Link to="/signup" className="navbtnlink">
+              <Link to="/signup" className="btnlink">
                 Sign Up
               </Link>
             </>

@@ -12,7 +12,7 @@ const ThemeIcon = () => {
   return (
     <button
       onClick={toggleDarkMode}
-      className={`rounded-lg border-1 border-neutral-400 p-2 absolute right-8 xl:right-32 shadow-lg transition duration-300 hover:scale-125 ${
+      className={`rounded-lg border-1 border-neutral-400 p-2 absolute right-8 xl:right-32 shadow-lg transition duration-300 hover:scale-125 mb-20 ${
         darkMode ? "shadow-gray-800" : null
       }`}
     >

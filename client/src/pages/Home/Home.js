@@ -1,4 +1,4 @@
-import Navigation from "../../components/Nav/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import "./Home.css";
 import { FormControl, Form, Button } from "react-bootstrap";
 import { useState } from "react";
@@ -14,7 +14,7 @@ function Home() {
 
   return (
     <div className="home">
-      <Navigation></Navigation>
+      <Navbar></Navbar>
       <div className="homeContainer">
         <h1 className="homeText">iPredict</h1>
         <Form className="d-flex" onSubmit={handleSubmit}>
