@@ -1,10 +1,9 @@
 import SentimentPage from "../../components/Sentiment/SentimentPage";
-import Navigation from "../../components/Nav/Navbar";
-
+import Navbar from "../../components/Navbar/Navbar";
 function Sentiment() {
   return (
     <div>
-      <Navigation />
+      <Navbar />
       <SentimentPage />
     </div>
   );

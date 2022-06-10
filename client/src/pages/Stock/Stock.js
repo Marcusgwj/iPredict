@@ -1,9 +1,9 @@
-import Navigation from "../../components/Nav/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 
 function Stock() {
   return (
     <div>
-      <Navigation></Navigation>
+      <Navbar></Navbar>
       <h1>Work in progress</h1>
     </div>
   );
