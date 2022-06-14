@@ -30,7 +30,7 @@ const NewsPage = () => {
       return { formattedStart, formattedEnd };
     };
 
-    const updateChartData = async () => {
+    const updateNewsData = async () => {
       try {
         const { formattedStart, formattedEnd } = getDateRange();
         const result = await searchNews({
@@ -45,7 +45,7 @@ const NewsPage = () => {
       }
     };
 
-    updateChartData();
+    updateNewsData();
   }, [stockSymbol]);
 
   return (
@@ -64,7 +64,7 @@ const NewsPage = () => {
               <Article newsItem={newsItem} key={newsItem.headline} />
             ))
           ) : (
-            <h1>Not available yet</h1>
+            <h1>No available news</h1>
           )}
         </div>
       </Container>
