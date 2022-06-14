@@ -1,36 +1,22 @@
+import ThemeIcon from "../../components/Header/ThemeIcon";
 import Navbar from "../../components/Navbar/Navbar";
-import "./Home.css";
-import { FormControl, Form, Button } from "react-bootstrap";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import Front from "../../components/Home/Front";
+import HomePrice from "../../components/Home/HomePrice";
+import HomeNews from "../../components/Home/HomeNews";
+import HomeSentiment from "../../components/Home/HomeSentiment";
+import HomePrediction from "../../components/Home/HomePrediction";
 
 function Home() {
-  const [ticker, setTicker] = useState("");
-  const navigate = useNavigate();
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    navigate(`/stocks/${ticker}`);
-  };
-
   return (
-    <div className="home">
-      <Navbar></Navbar>
-      <div className="homeContainer">
-        <h1 className="homeText">iPredict</h1>
-        <Form className="d-flex" onSubmit={handleSubmit}>
-          <FormControl
-            type="search"
-            placeholder="Search stock ticker"
-            className="me-2"
-            aria-label="Search"
-            onChange={(e) => setTicker(e.target.value)}
-          />
-          <Button type="submit" variant="outline-light">
-            Search{" "}
-          </Button>
-        </Form>
-      </div>
-    </div>
+    <>
+      <Navbar />
+      <ThemeIcon />
+      <Front />
+      <HomePrice />
+      {/* <HomePrediction /> */}
+      <HomeNews />
+      <HomeSentiment />
+    </>
   );
 }
 

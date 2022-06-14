@@ -24,42 +24,43 @@ const Navbar = () => {
   return (
     <>
       <nav className="nav">
-        <h1 className="heading">iPredict</h1>
+        <p className="heading">iPredict</p>
 
         <div className={show ? "menu show" : "menu"}>
           <Link to="/" className="navlink">
-            <div className="icon">
-              <HomeIcon /> Home
+            <div className="page">
+              <HomeIcon className="icon" />
+              Home
             </div>
           </Link>
           <Link to="/charts" className="navlink">
-            <div className="icon">
-              <CandlestickChartIcon />
+            <div className="page">
+              <CandlestickChartIcon className="icon" />
               Charts
             </div>
           </Link>
           <Link to="/news" className="navlink">
-            <div className="icon">
-              <ArticleIcon />
+            <div className="page">
+              <ArticleIcon className="icon" />
               News
             </div>
           </Link>
           <Link to="/sentiment" className="navlink">
-            <div className="icon">
-              <InsertEmoticonIcon />
+            <div className="page">
+              <InsertEmoticonIcon className="icon" />
               Sentiment
             </div>
           </Link>
           <Link to="/predictions" className="navlink">
-            <div className="icon">
-              <SearchIcon />
+            <div className="page">
+              <SearchIcon className="icon" />
               Predictions
             </div>
           </Link>
-          <Link to="/portfolio" className="navlink">
-            <div className="icon">
-              <AddToQueueIcon />
-              Portfolio
+          <Link to="/watchlist" className="navlink">
+            <div className="page">
+              <AddToQueueIcon className="mr-2" />
+              Watchlist
             </div>
           </Link>
         </div>

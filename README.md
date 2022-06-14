@@ -47,7 +47,6 @@ We also want to make stock predictions less intimidating for the general public.
 - [Express.js](https://expressjs.com/)
 - [React.js](https://reactjs.org/)
 - [Node.js](https://nodejs.org/en/)
-- [React Bootstrap](https://react-bootstrap.github.io/)
 - [Material UI](https://mui.com/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Python](https://www.python.org/)
