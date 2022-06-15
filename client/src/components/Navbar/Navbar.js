@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState, useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";
+import axiosInstance from "../../utils/config";
 import { useNavigate } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
 import CandlestickChartIcon from "@mui/icons-material/CandlestickChart";
@@ -15,9 +16,14 @@ const Navbar = () => {
   const { user, dispatch } = useContext(AuthContext);
 
   const navigate = useNavigate();
-  const logout = () => {
-    navigate("/");
-    dispatch({ type: "LOGOUT" });
+  const logout = async () => {
+    try {
+      const res = await axiosInstance.post("/auth/logout");
+      dispatch({ type: "LOGOUT" });
+      navigate("/");
+    } catch (err) {
+      dispatch({ type: "FAILURE", payload: err.response.data });
+    }
   };
   const [show, setShow] = useState(false);
   const handleClick = () => setShow(!show);

@@ -2,9 +2,11 @@ import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import authRoute from "./routes/auth.js";
+import watchlistRoute from "./routes/watchlist.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import path from "path";
+
 const app = express();
 dotenv.config();
 
@@ -27,8 +29,9 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-//routes
+// Routes
 app.use("/api/auth", authRoute);
+app.use("/api/watchlist", watchlistRoute);
 
 app.use((err, req, res, next) => {
   const errorStatus = err.status || 500;

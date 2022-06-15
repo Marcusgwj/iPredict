@@ -71,7 +71,7 @@ function SignIn() {
       navigate("/");
     } catch (err) {
       setMsg({ fail: true, msg: err.response.data.message });
-      dispatch({ type: "LOGIN_FAILURE", payload: err.response.data });
+      dispatch({ type: "FAILURE", payload: err.response.data });
     }
   };
 
