@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 const Schema = mongoose.Schema;
-const PortfolioSchema = new Schema({
+const WatchlistSchema = new Schema({
   stocks: [
     {
       type: String,
@@ -8,4 +8,4 @@ const PortfolioSchema = new Schema({
   ],
 });
 
-export default mongoose.model("Portfolio", PortfolioSchema);
+export default mongoose.model("Watchlist", WatchlistSchema);

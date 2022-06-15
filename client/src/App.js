@@ -5,6 +5,7 @@ import SignIn from "./pages/SignIn/SignIn";
 import SignUp from "./pages/SignUp/SignUp";
 import News from "./pages/News/News";
 import Sentiment from "./pages/Sentiment/Sentiment";
+import Watchlist from "./pages/Watchlist/Watchlist";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/news" element={<News />} />
         <Route path="/sentiment" element={<Sentiment />} />
+        <Route path="/watchlist" element={<Watchlist />} />
       </Routes>
     </BrowserRouter>
   );

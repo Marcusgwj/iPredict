@@ -67,3 +67,10 @@ export const login = async (req, res, next) => {
     next(err);
   }
 };
+
+export const logout = (req, res) => {
+  res
+    .cookie("access_token", "", { maxAge: 1 })
+    .status(200)
+    .send("User logged out");
+};

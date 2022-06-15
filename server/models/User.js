@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+
 const Schema = mongoose.Schema;
 const UserSchema = new Schema({
   username: {
@@ -15,9 +16,9 @@ const UserSchema = new Schema({
     type: String,
     required: true,
   },
-  portfolio: {
+  watchlist: {
     type: Schema.Types.ObjectId,
-    ref: "Portfolio",
+    ref: "Watchlist",
   },
 });
 

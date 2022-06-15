@@ -70,7 +70,7 @@ export default function SignUp() {
       navigate("/signin");
     } catch (err) {
       setMsg({ fail: true, msg: err.response.data.message });
-      dispatch({ type: "REGISTER_FAILURE", payload: err.response.data });
+      dispatch({ type: "FAILURE", payload: err.response.data });
     }
   };
 
