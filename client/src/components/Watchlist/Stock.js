@@ -39,17 +39,17 @@ const Stock = (props) => {
   return (
     <div className="stock-row">
       <p>{stock.number}</p>
-      <p>{stock.symbol}</p>
-      <p>${stock.current.toLocaleString()}</p>
+      <p className="ticker">{stock.symbol}</p>
+      <p className="price">${stock.current}</p>
       <p
-        className={`${
+        className={`percent ${
           stock.percentage >= 0 ? "text-emerald-500" : "text-red-500"
         }`}
       >
         {stock.percentage.toFixed(2)}%
       </p>
       <p
-        className={`hide-mobile ${
+        className={`change ${
           stock.change >= 0 ? "text-emerald-500" : "text-red-500"
         }`}
       >
