@@ -109,8 +109,7 @@
     flex-direction: column;
     justify-content: start;
     top: 80px;
-    right: 0%;
-    width: 40%;
+    width: 100%;
     transition: 0.4s;
     z-index: 11;
     background: #111827;

@@ -1,42 +1,54 @@
-import Navbar from "../Navbar/Navbar";
 import Stock from "./Stock";
-import { Link } from "react-router-dom";
-import { useContext, useEffect, useState } from "react";
+import Add from "./Add";
+import { useContext, useState, useEffect } from "react";
+import axiosInstance from "../../utils/config";
 import { ThemeContext } from "../../context/ThemeContext";
 import "./Watchlist.css";
+import { useNavigate } from "react-router-dom";
 
 const WatchlistPage = () => {
   const { darkMode } = useContext(ThemeContext);
+  const [stocks, setStocks] = useState([]);
+  const navigate = useNavigate();
 
-  const stocks = [
-    {
-      market_cap_rank: 1,
-      symbol: "AAPL",
-      current_price: 138,
-      price_change_percentage_24h: 5,
-      change: 500,
-      market_cap: 200,
-    },
-  ];
+  useEffect(() => {
+    const updateStocksData = async () => {
+      try {
+        const result = await axiosInstance.get("/watchlist/getStocks");
+        setStocks(result.data);
+      } catch (error) {
+        setStocks([]);
+        console.log(error);
+        if (error.request.status === 401) {
+          navigate("/signin");
+        }
+      }
+    };
+    updateStocksData();
+  }, [stocks, navigate]);
+
   return (
     <div
       className={`min-h-screen text-gray-300 ${
-        darkMode ? "bg-gray-900 " : "bg-neutral-100"
+        darkMode ? "bg-gray-900 " : "bg-zinc-200"
       }`}
     >
       <div className={`watch-container }`}>
         <div>
           <div className="watch-heading">
             <p>#</p>
-            <p className="coin-name">Ticker</p>
-            <p>Price</p>
+            <p className="stock-heading">Ticker</p>
+            <p className="stock-heading">Price</p>
             <p>Change (%)</p>
-            <p className="hide-mobile">Change</p>
-            <p className="hide-mobile">Mkt Cap</p>
+            <p className="hide-mobile change">Change</p>
           </div>
-          {stocks.map((stocks) => {
-            return <Stock stocks={stocks} />;
-          })}
+          {stocks.length > 0 &&
+            stocks.map((stockSymbol, index) => {
+              return (
+                <Stock key={index} stockSymbol={stockSymbol} index={index} />
+              );
+            })}
+          <Add />
         </div>
       </div>
     </div>
