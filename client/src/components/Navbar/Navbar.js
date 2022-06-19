@@ -18,7 +18,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const logout = async () => {
     try {
-      const res = await axiosInstance.post("/auth/logout");
+      await axiosInstance.post("/auth/logout");
       dispatch({ type: "LOGOUT" });
       navigate("/");
     } catch (err) {
