@@ -33,14 +33,14 @@ const WatchlistPage = () => {
         darkMode ? "bg-gray-900 " : "bg-zinc-200"
       }`}
     >
-      <div className={`watch-container }`}>
+      <div className="watch-container">
         <div>
           <div className="watch-heading">
             <p>#</p>
-            <p className="stock-heading">Ticker</p>
-            <p className="stock-heading">Price</p>
-            <p>Change (%)</p>
-            <p className="hide-mobile change">Change</p>
+            <p className="ticker">Ticker</p>
+            <p className="price">Price</p>
+            <p className="percent">Change (%)</p>
+            <p className="change">Change</p>
           </div>
           {stocks.length > 0 &&
             stocks.map((stockSymbol, index) => {

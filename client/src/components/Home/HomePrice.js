@@ -51,7 +51,7 @@ const HomePrice = () => {
           <div className="border py-8 rounded-xl shadow-xl">
             <span
               className={`text-4xl font-bold ${
-                quotes["AAPL"]["d"] > 0 ? "text-lime-500" : "text-red-500"
+                quotes["AAPL"]["d"] > 0 ? "text-emerald-500" : "text-red-500"
               }`}
             >
               ${quotes["AAPL"]["c"]}
@@ -69,7 +69,7 @@ const HomePrice = () => {
           <div className="border py-8 rounded-xl shadow-xl">
             <span
               className={`text-4xl font-bold ${
-                quotes["TSLA"]["d"] > 0 ? "text-lime-500" : "text-red-500"
+                quotes["TSLA"]["d"] > 0 ? "text-emerald-500" : "text-red-500"
               }`}
             >
               ${quotes["TSLA"]["c"]}
@@ -87,7 +87,7 @@ const HomePrice = () => {
           <div className="border py-8 rounded-xl shadow-xl">
             <span
               className={`text-4xl font-bold ${
-                quotes["GOOG"]["d"] > 0 ? "text-lime-500" : "text-red-500"
+                quotes["GOOG"]["d"] > 0 ? "text-emerald-500" : "text-red-500"
               }`}
             >
               ${quotes["GOOG"]["c"]}
