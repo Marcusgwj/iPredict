@@ -25,12 +25,9 @@ export const createDate = (date, days, weeks, months, years) => {
 
 // Convert date format from date object to eg 2022-06-01.
 export const convertDateFormat = (date) => {
-  // Will give eg "06/01/2022"
-  const dateString = date.toLocaleDateString();
-  return `${dateString.slice(6)}-${dateString.slice(3, 5)}-${dateString.slice(
-    0,
-    2
-  )}`;
+  const offset = date.getTimezoneOffset();
+  const offsetDate = new Date(date.getTime() - offset * 60 * 1000);
+  return offsetDate.toISOString().split("T")[0];
 };
 
 const month = [

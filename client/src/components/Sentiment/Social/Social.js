@@ -63,7 +63,7 @@ const Social = () => {
   }, [stockSymbol, filter]);
 
   const popupString = (
-    <div>
+    <p>
       Social sentiment can give us some insight into the public's opinion
       regarding a stock. <br />
       This can potentially impact future stock prices and is a useful tool.{" "}
@@ -71,15 +71,15 @@ const Social = () => {
       The data is obtained by scraping reddit and twitter. <br />
       You should not rely solely on this tool but use it together with other
       indicators.
-    </div>
+    </p>
   );
 
   return (
     <Card>
-      <p className="flex absolute left-2 top-0 text-lg  text-slate-400">
+      <div className="flex absolute left-2 top-0 text-lg  text-slate-400">
         Social sentiment
         <Popup content={popupString} />
-      </p>
+      </div>
 
       <ul className="flex absolute top-2 right-2 z-2">
         {["reddit", "twitter"].map((item) => (

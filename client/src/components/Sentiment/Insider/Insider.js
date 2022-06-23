@@ -67,7 +67,7 @@ const Insider = () => {
   }, [stockSymbol]);
 
   const popupString = (
-    <div>
+    <p>
       Insider sentiment give us some insight into the executives's opinion
       regarding their company's stock. <br />
       This is measured using{" "}
@@ -77,15 +77,15 @@ const Insider = () => {
       under net purchasing activity. <br />
       You should not rely solely on this tool but use it together with other
       indicators.
-    </div>
+    </p>
   );
 
   return (
     <Card>
-      <p className="flex absolute left-2 top-0 text-lg  text-slate-400">
+      <div className="flex absolute left-2 top-0 text-lg  text-slate-400">
         Insider sentiment
         <Popup content={popupString}> </Popup>
-      </p>
+      </div>
       <ResponsiveContainer>
         <BarChart width={730} height={250} data={data}>
           <XAxis dataKey="date" />
