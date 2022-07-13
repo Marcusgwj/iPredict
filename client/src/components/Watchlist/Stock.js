@@ -27,6 +27,7 @@ const Stock = (props) => {
         setStock(data);
       } catch (error) {
         console.log(error);
+        removeWatchList(stockSymbol);
       }
     };
     formatData();

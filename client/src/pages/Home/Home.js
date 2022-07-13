@@ -13,7 +13,7 @@ function Home() {
       <ThemeIcon />
       <Front />
       <HomePrice />
-      {/* <HomePrediction /> */}
+      <HomePrediction />
       <HomeNews />
       <HomeSentiment />
     </>

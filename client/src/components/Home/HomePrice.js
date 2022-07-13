@@ -57,7 +57,8 @@ const HomePrice = () => {
               ${quotes["AAPL"]["c"]}
               <div>
                 <span className="text-lg xl:text-xl 2xl:text-2x">
-                  {quotes["AAPL"]["d"]} <span>({quotes["AAPL"]["dp"]}%)</span>
+                  {quotes["AAPL"]["d"].toFixed(2)}
+                  <span>({quotes["AAPL"]["dp"].toFixed(2)}%)</span>
                 </span>
               </div>
             </span>
@@ -69,13 +70,16 @@ const HomePrice = () => {
           <div className="border py-8 rounded-xl shadow-xl">
             <span
               className={`text-4xl font-bold ${
-                quotes["TSLA"]["d"] > 0 ? "text-emerald-500" : "text-red-500"
+                quotes["TSLA"]["d"].toFixed(2) > 0
+                  ? "text-emerald-500"
+                  : "text-red-500"
               }`}
             >
-              ${quotes["TSLA"]["c"]}
+              ${quotes["TSLA"]["c"].toFixed(2)}
               <div>
                 <span className="text-lg xl:text-xl 2xl:text-2x">
-                  {quotes["TSLA"]["d"]} <span>({quotes["TSLA"]["dp"]}%)</span>
+                  {quotes["TSLA"]["d"].toFixed(2)}
+                  <span>({quotes["TSLA"]["dp"].toFixed(2)}%)</span>
                 </span>
               </div>
             </span>
@@ -87,13 +91,16 @@ const HomePrice = () => {
           <div className="border py-8 rounded-xl shadow-xl">
             <span
               className={`text-4xl font-bold ${
-                quotes["GOOG"]["d"] > 0 ? "text-emerald-500" : "text-red-500"
+                quotes["GOOG"]["d"].toFixed(2) > 0
+                  ? "text-emerald-500"
+                  : "text-red-500"
               }`}
             >
-              ${quotes["GOOG"]["c"]}
+              ${quotes["GOOG"]["c"].toFixed(2)}
               <div>
                 <span className="text-lg xl:text-xl 2xl:text-2x">
-                  {quotes["GOOG"]["d"]} <span>({quotes["GOOG"]["dp"]}%)</span>
+                  {quotes["GOOG"]["d"]}
+                  <span>({quotes["GOOG"]["dp"].toFixed(2)}%)</span>
                 </span>
               </div>
             </span>

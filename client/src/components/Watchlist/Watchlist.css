@@ -67,4 +67,11 @@
     .change {
         display: none;
     }
+    .percent {
+        margin-left: 40%;
+    }
+
+    .times {
+        margin-left: 70%;
+    }
 }

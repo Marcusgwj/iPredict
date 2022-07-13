@@ -1,6 +1,6 @@
 import axiosInstance from "../../utils/config";
 import { useNavigate } from "react-router-dom";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { AuthContext } from "../../context/AuthContext";
 
 // mui
@@ -53,7 +53,7 @@ export default function SignUp() {
     msg: "",
   });
 
-  const { loading, dispatch } = useContext(AuthContext);
+  const { user, loading, dispatch } = useContext(AuthContext);
 
   const navigate = useNavigate();
 
@@ -63,11 +63,11 @@ export default function SignUp() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    dispatch({ type: "REGISTER_START" });
+    dispatch({ type: "LOGIN_START" });
     try {
       const res = await axiosInstance.post("/auth/register", credentials);
-      dispatch({ type: "REGISTER_SUCCESS", payload: res.data.details });
-      navigate("/signin");
+      dispatch({ type: "LOGIN_SUCCESS", payload: res.data.username });
+      navigate("/");
     } catch (err) {
       setMsg({ fail: true, msg: err.response.data.message });
       dispatch({ type: "FAILURE", payload: err.response.data });
@@ -77,6 +77,12 @@ export default function SignUp() {
   const handleClose = () => {
     setMsg({ fail: false, msg: "" });
   };
+
+  useEffect(() => {
+    if (user) {
+      navigate("/");
+    }
+  }, [user, navigate]);
 
   return (
     <ThemeProvider theme={theme}>

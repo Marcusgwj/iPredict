@@ -41,7 +41,20 @@ const Chart = () => {
     const getDateRange = () => {
       const { days, weeks, months, years } = chartConfig[filter];
 
-      const endDate = new Date();
+      let endDate = new Date(
+        new Date().toLocaleString("en-US", {
+          timeZone: "America/New_York",
+        })
+      );
+
+      const day = endDate.getDay();
+      if (day === 0) {
+        endDate = createDate(endDate, -2, 0, 0, 0);
+      }
+      if (day === 6) {
+        endDate = createDate(endDate, -1, 0, 0, 0);
+      }
+
       const startDate = createDate(endDate, -days, -weeks, -months, -years);
 
       const startTimestampUnix = convertDateToUnixTimestamp(startDate);

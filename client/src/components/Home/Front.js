@@ -1,4 +1,5 @@
 import { ThemeContext } from "../../context/ThemeContext";
+import { AuthContext } from "../../context/AuthContext";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { EmojiHappyIcon, SearchIcon } from "@heroicons/react/solid";
@@ -8,6 +9,8 @@ import ArticleIcon from "@mui/icons-material/Article";
 
 const Front = () => {
   const { darkMode } = useContext(ThemeContext);
+  const { user } = useContext(AuthContext);
+
   const navigate = useNavigate();
 
   return (
@@ -21,13 +24,17 @@ const Front = () => {
         <div className="flex flex-col justify-center md:items-start w-full px-2 py-8">
           <h1 className="py-3 text-5xl md:text-7xl font-bold">iPredict</h1>
           <p className="text-2xl">Make more informed investment decisions.</p>
-          <button
-            onClick={() => navigate("/signup")}
-            className="py-3 px-6 sm:w-[60%] my-4  border text-white bg-indigo-600 border-indigo-600 
-                hover:bg-transparent hover:text-indigo-600 rounded-md"
-          >
-            Sign up
-          </button>
+          {user ? (
+            <></>
+          ) : (
+            <button
+              onClick={() => navigate("/signup")}
+              className="py-3 px-6 sm:w-[60%] my-4  border text-white bg-indigo-600 border-indigo-600 
+                  hover:bg-transparent hover:text-indigo-600 rounded-md"
+            >
+              Sign up
+            </button>
+          )}
         </div>
         <div>
           <img className="w-full" src={money} alt="/" />
