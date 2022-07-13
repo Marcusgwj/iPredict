@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 import authRoute from "./routes/auth.js";
 import watchlistRoute from "./routes/watchlist.js";
+import resetRoute from "./routes/reset.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import path from "path";
@@ -32,6 +33,7 @@ app.use(express.urlencoded({ extended: true }));
 // Routes
 app.use("/api/auth", authRoute);
 app.use("/api/watchlist", watchlistRoute);
+app.use("/api/reset", resetRoute);
 
 app.use((err, req, res, next) => {
   const errorStatus = err.status || 500;

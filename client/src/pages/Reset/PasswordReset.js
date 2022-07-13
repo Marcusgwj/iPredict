@@ -1,5 +1,5 @@
 import axiosInstance from "../../utils/config";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useContext, useState, useEffect } from "react";
 import { AuthContext } from "../../context/AuthContext";
 
@@ -8,8 +8,7 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
+
 import Link from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
@@ -43,35 +42,38 @@ const theme = createTheme({
   },
 });
 
-function SignIn() {
+function PasswordReset() {
+  const { token, id } = useParams();
+
   const [credentials, setCredentials] = useState({
-    email: undefined,
+    userId: id,
+    token: token,
     password: undefined,
   });
 
-  const [registerErr, setMsg] = useState({
-    fail: false,
+  const [message, setMsg] = useState({
+    show: false,
     msg: "",
   });
 
-  const { user, loading, dispatch } = useContext(AuthContext);
+  const { user, loading } = useContext(AuthContext);
+
+  const [success, setSuccess] = useState(false);
 
   const navigate = useNavigate();
 
   const handleChange = (e) => {
-    setCredentials((prev) => ({ ...prev, [e.target.id]: e.target.value }));
+    setCredentials((prev) => ({ ...prev, password: e.target.value }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    dispatch({ type: "LOGIN_START" });
     try {
-      const res = await axiosInstance.post("/auth/login", credentials);
-      dispatch({ type: "LOGIN_SUCCESS", payload: res.data.username });
-      navigate("/");
+      await axiosInstance.post("/reset/change", credentials);
+      setMsg({ show: true, msg: "Password reset successful" });
+      setSuccess(true);
     } catch (err) {
-      setMsg({ fail: true, msg: err.response.data.message });
-      dispatch({ type: "FAILURE", payload: err.response.data });
+      setMsg({ show: true, msg: err.response.data.message });
     }
   };
 
@@ -79,9 +81,6 @@ function SignIn() {
     setMsg({ fail: false, msg: "" });
   };
 
-  const handleGuest = () => {
-    setCredentials({ email: "tester@gmail.com", password: "Tester@123" });
-  };
   useEffect(() => {
     if (user) {
       navigate("/");
@@ -104,7 +103,7 @@ function SignIn() {
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Sign in
+            Enter new password
           </Typography>
           <Box
             component="form"
@@ -116,59 +115,43 @@ function SignIn() {
               margin="normal"
               required
               fullWidth
-              id="email"
-              label="Email Address"
-              name="email"
-              autoComplete="email"
-              autoFocus
-              onChange={handleChange}
-            />
-            <TextField
-              margin="normal"
-              required
-              fullWidth
               name="password"
               label="Password"
               type="password"
               id="password"
-              autoComplete="current-password"
               onChange={handleChange}
             />
+            {success ? (
+              <Button
+                href="/signin"
+                fullWidth
+                variant="contained"
+                sx={{ mt: 3, mb: 2 }}
+                disabled={loading}
+              >
+                Sign in
+              </Button>
+            ) : (
+              <Button
+                type="submit"
+                fullWidth
+                variant="contained"
+                sx={{ mt: 3, mb: 2 }}
+                disabled={loading}
+              >
+                Reset password
+              </Button>
+            )}
 
-            <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
-              label="Remember me"
-            />
-
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              sx={{ mt: 3, mb: 2 }}
-              disabled={loading}
-            >
-              Sign In
-            </Button>
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              sx={{ mb: 2 }}
-              disabled={loading}
-              onClick={() => handleGuest()}
-            >
-              Continue as Guest
-            </Button>
-
-            <Grid container>
-              <Grid item xs>
-                <Link href="/reset" variant="body2">
-                  Forgot Password
+            <Grid container justifyContent="space-between">
+              <Grid item>
+                <Link href="/" variant="body2">
+                  Home
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="/signup" variant="body2">
-                  {"Don't have an account? Sign Up"}
+                <Link href="/signin" variant="body2">
+                  Already have an account? Sign in
                 </Link>
               </Grid>
             </Grid>
@@ -180,8 +163,8 @@ function SignIn() {
             vertical: "top",
             horizontal: "center",
           }}
-          open={registerErr.fail}
-          message={registerErr.msg}
+          open={message.show}
+          message={message.msg}
           autoHideDuration={4000}
           onClose={handleClose}
         />
@@ -190,4 +173,4 @@ function SignIn() {
   );
 }
 
-export default SignIn;
+export default PasswordReset;

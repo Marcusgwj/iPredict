@@ -48,7 +48,13 @@ const Dashboard = () => {
       }`}
     >
       <div className="col-span-1 md:col-span-2 xl:col-span-3 row-span-1 flex justify-start items-center">
-        <Header name={stockDetails.name} />
+        <Header
+          name={`${
+            Object.keys(quote).length === 0
+              ? `${stockSymbol} (Not available)`
+              : stockDetails.name
+          }`}
+        />
       </div>
       <div className="md:col-span-2 row-span-4">
         <Chart />
