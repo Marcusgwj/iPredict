@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import authRoute from "./routes/auth.js";
 import watchlistRoute from "./routes/watchlist.js";
 import resetRoute from "./routes/reset.js";
+import pictureRoute from "./routes/picture.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import path from "path";
@@ -34,6 +35,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/auth", authRoute);
 app.use("/api/watchlist", watchlistRoute);
 app.use("/api/reset", resetRoute);
+app.use("/api/picture", pictureRoute);
 
 app.use((err, req, res, next) => {
   const errorStatus = err.status || 500;

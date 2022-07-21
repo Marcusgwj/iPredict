@@ -16,6 +16,9 @@ const UserSchema = new Schema({
     type: String,
     required: true,
   },
+  photo: {
+    type: String,
+  },
   watchlist: {
     type: Schema.Types.ObjectId,
     ref: "Watchlist",
