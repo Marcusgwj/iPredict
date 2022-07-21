@@ -5,6 +5,7 @@ import crypto from "crypto";
 import { createError } from "../utils/error.js";
 import sendEmail from "../utils/email/sendEmail.js";
 import isStrongPassword from "validator/lib/isStrongPassword.js";
+import isEmail from "validator/lib/isEmail.js";
 
 export const request = async (req, res, next) => {
   try {
@@ -46,11 +47,11 @@ export const change = async (req, res, next) => {
 
     let passwordResetToken = await Token.findOne({ userId });
     if (!passwordResetToken) {
-      throw new Error("Invalid or expired password reset token");
+      return next(createError(404, "Invalid or expired password reset token"));
     }
     const isValid = await bcrypt.compare(token, passwordResetToken.token);
     if (!isValid) {
-      throw new Error("Invalid or expired password reset token");
+      return next(createError(404, "Invalid or expired password reset token"));
     }
     if (!isStrongPassword(req.body.password)) {
       return next(
@@ -74,6 +75,90 @@ export const change = async (req, res, next) => {
     );
     await passwordResetToken.deleteOne();
     return res.status(200).send("Success");
+  } catch (err) {
+    next(err);
+  }
+};
+
+export const update = async (req, res, next) => {
+  try {
+    const { currentUser, newUsername, email, password } = req.body;
+
+    let user = await User.findOne({ username: currentUser });
+
+    if (!user) {
+      return next(createError(404, "User not found!"));
+    }
+
+    if (req.file) {
+      user.photo = req.file.path;
+      await user.save();
+    }
+
+    // Update email
+    if (email != "undefined" && email != "") {
+      let checkEmail = await User.findOne({ email });
+      if (!checkEmail) {
+        if (!isEmail(email)) {
+          return next(createError(400, "Invalid email"));
+        }
+        await User.updateOne(
+          { username: currentUser },
+          { $set: { email: email } },
+          {
+            returnOriginal: false,
+          }
+        );
+      } else {
+        return next(createError(400, "Email taken"));
+      }
+    }
+
+    // Update password
+    if (password != "undefined" && password != "") {
+      if (!isStrongPassword(password)) {
+        return next(
+          createError(
+            400,
+            "Invalid password: Min 8 characters, 1 uppercase, 1 lowercase, 1 number, 1 symbol"
+          )
+        );
+      }
+
+      const salt = bcrypt.genSaltSync(10);
+      const hash = bcrypt.hashSync(password, salt);
+      await User.updateOne(
+        { username: currentUser },
+        { $set: { password: hash } },
+        {
+          returnOriginal: false,
+        }
+      );
+    }
+
+    // Update username
+    let updateUser = null;
+    if (newUsername != "undefined" && newUsername != "") {
+      let checkUser = await User.findOne({ username: newUsername });
+      if (!checkUser) {
+        updateUser = await User.findOneAndUpdate(
+          { username: currentUser },
+          { $set: { username: newUsername } },
+          {
+            returnOriginal: false,
+          }
+        );
+      } else {
+        return next(createError(400, "Username taken"));
+      }
+    }
+
+    if (updateUser != null) {
+      const { username } = updateUser._doc;
+      return res.status(200).json({ username });
+    } else {
+      return res.status(200).json({ username: currentUser });
+    }
   } catch (err) {
     next(err);
   }
