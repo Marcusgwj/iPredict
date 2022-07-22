@@ -13,7 +13,7 @@
     <a href="https://ipredict.herokuapp.com/"><strong>Website</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Marcusgwj/iPredict">Explore the docs</a>
+    <a href="https://bit.ly/3PCBK4i">Read the docs</a>
     ·
     <a href="https://github.com/Marcusgwj/iPredict/issues">Report Bug</a>
     ·
@@ -30,6 +30,7 @@
     <li><a href="#usage">Usage</a></li>
     <li><a href="#milestone-1">Milestone 1</a></li>
     <li><a href="#milestone-2">Milestone 2</a></li>
+    <li><a href="#milestone-3">Milestone 3</a></li>
     <li><a href="#contributors">Contributors</a></li>
   </ol>
 </details>
