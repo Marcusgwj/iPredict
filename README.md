@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img src="images/5143.jpg" alt="Logo" width="400" height="565">
+  <img src="images/5143.jpg" alt="Logo" width="400" height="566">
 
 <h3 align="center">iPredict</h3>
 

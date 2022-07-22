@@ -28,110 +28,40 @@ const HomePrediction = () => {
             Stock Prediction
           </h3>
           <p className="text-3xl">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
-            laudantium odio ullam inventore aliquid ipsum quasi tenetur velit
-            voluptatum iste.
+            Utilise machine learning models to gain an insight in potential
+            future stock price trends.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3">
           <div className="bg-white text-slate-900 m-4 p-8 rounded-xl shadow-2xl relative">
             <span className=" px-3 py-1 bg-indigo-200 text-indigo-900 rounded-2xl text-2xl flex justify-center">
-              Long short-term memory
+              Long Short-Term Memory
             </span>
 
             <p className="text-2xl py-8 text-slate-500">
-              Type of recurrent neural network model, inspired by the neurons in
-              our brains.
+              Special kind of recurrent neural network capable of handling
+              long-term dependencies.
             </p>
-            <div className="text-2xl">
-              <p className="flex py-4">
-                <CheckIcon className="w-8 mr-5 text-green-600" />
-                Lorem, ipsum dolor.
-              </p>
-              <p className="flex py-4">
-                <CheckIcon className="w-8 mr-5 text-green-600" />
-                Lorem, ipsum dolor.
-              </p>
-              <p className="flex py-4">
-                <CheckIcon className="w-8 mr-5 text-green-600" />
-                Lorem, ipsum dolor.
-              </p>
-              <p className="flex py-4">
-                <CheckIcon className="w-8 mr-5 text-green-600" />
-                Lorem, ipsum dolor.
-              </p>
-              <p className="flex py-4">
-                <CheckIcon className="w-8 mr-5 text-green-600" />
-                Lorem, ipsum dolor.
-              </p>
-              <button className="w-full py-4 my-4">Get Started</button>
-            </div>
           </div>
           <div className="bg-white text-slate-900 m-4 p-8 rounded-xl shadow-2xl relative">
             <span className=" px-3 py-1 bg-indigo-200 text-indigo-900 rounded-2xl text-2xl flex justify-center">
-              Linear regression
+              Linear Regression
             </span>
 
             <p className="text-2xl py-8 text-slate-500">
               Supervised learning model which finds the best fit linear line
-              between the independent and dependent variable
+              between the independent and dependent variable.
             </p>
-            <div className="text-2xl">
-              <p className="flex py-4">
-                <CheckIcon className="w-8 mr-5 text-green-600" />
-                Lorem, ipsum dolor.
-              </p>
-              <p className="flex py-4">
-                <CheckIcon className="w-8 mr-5 text-green-600" />
-                Lorem, ipsum dolor.
-              </p>
-              <p className="flex py-4">
-                <CheckIcon className="w-8 mr-5 text-green-600" />
-                Lorem, ipsum dolor.
-              </p>
-              <p className="flex py-4">
-                <CheckIcon className="w-8 mr-5 text-green-600" />
-                Lorem, ipsum dolor.
-              </p>
-              <p className="flex py-4">
-                <CheckIcon className="w-8 mr-5 text-green-600" />
-                Lorem, ipsum dolor.
-              </p>
-              <button className="w-full py-4 my-4">Get Started</button>
-            </div>
           </div>
           <div className="bg-white text-slate-900 m-4 p-8 rounded-xl shadow-2xl relative">
             <span className=" px-3 py-1 bg-indigo-200 text-indigo-900 rounded-2xl text-2xl flex justify-center ">
-              Support vector machine
+              Support Vector Regression
             </span>
             <p className="text-2xl py-8 text-slate-500">
-              Supervised learning models that analyze data for classification
-              and regression analysis.
+              Supervised learning model that analyze data for classification and
+              regression analysis.
             </p>
-            <div className="text-2xl">
-              <p className="flex py-4">
-                <CheckIcon className="w-8 mr-5 text-green-600" />
-                Lorem, ipsum dolor.
-              </p>
-              <p className="flex py-4">
-                <CheckIcon className="w-8 mr-5 text-green-600" />
-                Lorem, ipsum dolor.
-              </p>
-              <p className="flex py-4">
-                <CheckIcon className="w-8 mr-5 text-green-600" />
-                Lorem, ipsum dolor.
-              </p>
-              <p className="flex py-4">
-                <CheckIcon className="w-8 mr-5 text-green-600" />
-                Lorem, ipsum dolor.
-              </p>
-              <p className="flex py-4">
-                <CheckIcon className="w-8 mr-5 text-green-600" />
-                Lorem, ipsum dolor.
-              </p>
-              <button className="w-full py-4 my-4">Get Started</button>
-            </div>
           </div>
         </div>
       </div>

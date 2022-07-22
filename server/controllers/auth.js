@@ -60,6 +60,7 @@ export const login = async (req, res, next) => {
       .cookie("access_token", token, {
         secure: true,
         httpOnly: true,
+        maxAge: 7 * 24 * 60 * 60 * 1000,
       })
       .status(200)
       .json({ username });
