@@ -60,10 +60,7 @@ iPredict helps investors make a more informed decision when buying or selling th
 
 ## Usage
 
-[Sign in](https://ipredict.herokuapp.com/signin) with test account:
-
-- Email: tester@gmail.com
-- Password: Tester@123
+[Sign in](https://ipredict.herokuapp.com/signin) as guest:
 
 Or [Sign up](https://ipredict.herokuapp.com/signup) for your account
 
@@ -86,13 +83,25 @@ Or [Sign up](https://ipredict.herokuapp.com/signup) for your account
 
 ## Milestone 2
 
-- [x] Improved home page
-- [x] Improved authentication features
-- [x] Improved stock chart
 - [x] Latest stock news
 - [x] Insider sentiment
 - [x] Social sentiment
-- [x] Watchlist only available to signed in users
+- [x] Watchlist feature available only to signed in users
+- [x] Improved home page
+- [x] Improved authentication features
+- [x] Improved stock chart
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- Milestone 3 -->
+
+## Milestone 3
+
+- [x] Deploy stock price prediction API
+- [x] Stock price prediction page
+- [x] Add user avatar and profile page
+- [x] Password reset feature
+- [x] Guest login feature
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
