@@ -18,9 +18,9 @@ export const fetchLSTM = async (stock) => {
     console.log(error);
   }
 };
-export const fetchSVM = async (stock) => {
+export const fetchSVR = async (stock) => {
   try {
-    const response = await axios.post(`${basePath}/svm`, { ticker: stock });
+    const response = await axios.post(`${basePath}/svr`, { ticker: stock });
     return response.data;
   } catch (error) {
     console.log(error);

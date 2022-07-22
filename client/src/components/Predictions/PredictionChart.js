@@ -12,7 +12,7 @@ import {
 import ClipLoader from "react-spinners/ClipLoader";
 import { ThemeContext } from "../../context/ThemeContext";
 import { StockContext } from "../../context/StockContext";
-import { fetchLR, fetchLSTM, fetchSVM } from "../../utils/api/PredictionAPI";
+import { fetchLR, fetchLSTM, fetchSVR } from "../../utils/api/PredictionAPI";
 
 const PredictionChart = ({ setModel }) => {
   const [filter, setFilter] = useState("LSTM");
@@ -21,7 +21,7 @@ const PredictionChart = ({ setModel }) => {
   const [loading, setLoading] = useState(false);
 
   const [data, setData] = useState([]);
-  const model = { LR: fetchLR, LSTM: fetchLSTM, SVM: fetchSVM };
+  const model = { LR: fetchLR, LSTM: fetchLSTM, SVR: fetchSVR };
   const formatData = (data) => {
     return data.Result.map((item, index) => {
       return {
@@ -51,7 +51,7 @@ const PredictionChart = ({ setModel }) => {
   return (
     <Card>
       <ul className="flex absolute top-2 right-2 z-2">
-        {["LSTM", "LR", "SVM"].map((item) => (
+        {["LSTM", "LR", "SVR"].map((item) => (
           <li key={item}>
             <ChartFilter
               text={item}

@@ -7,18 +7,26 @@ const About = ({ model }) => {
         {model === "LR" ? (
           <p>
             This uses the Linear Regression model to predict the next 30 day
-            prices.
+            prices. This is a machine learning algorithm based on supervised
+            learning. It assumes the linear relationship between the dependent
+            and independent variables. Regression then models a target
+            prediction value based on independent variables.
           </p>
-        ) : model === "SVM" ? (
+        ) : model === "SVR" ? (
           <p>
-            This uses the Support Vector Machine model to predict the next 30
-            day prices.
+            This uses the Support Vector Regression (SVR) model to predict the
+            next 30 day prices. Support Vector Machine is a supervised learning
+            algorithm used for classification of data. SVR uses the same
+            principle as SVM, but for regression problems. It acknowledges the
+            presence of non-linearity in the data.
           </p>
         ) : (
           <p>
             This uses the Long Short-Term Memory (LSTM) model to predict the
             next 30 day prices. This is a type of recurrent neural network
-            model, which is a model inspired by the neurons in our brains.
+            inspired by the neurons in our brains. What makes LSTM unique is
+            that it is capable of forgetting irrelevant adjustments that were
+            made before, and only keeping the relevant and more recent ones.
           </p>
         )}
         <p className="underline">Disclaimer</p>
