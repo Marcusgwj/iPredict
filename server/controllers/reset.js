@@ -33,7 +33,7 @@ export const request = async (req, res, next) => {
         name: user.username,
         link: link,
       },
-      `<div> <p>Hi ${user.username},</p> <p>You requested to reset your password.</p> <p> Please click the link below to reset your password</p> <a href='http://${link}'>Reset Password</a> </div>`
+      `<div> <p>Hi ${user.username},</p> <p>You requested to reset your password.</p> <p> Please click the link below to reset your password</p> <a href=${link}>Reset Password</a> </div>`
     );
     return res.status(200).send(link);
   } catch (err) {

@@ -31,7 +31,7 @@ const Chart = () => {
   const formatData = (data) => {
     return data.c.map((item, index) => {
       return {
-        value: item.toFixed(2),
+        value: Number(item.toFixed(2)),
         date: convertUnixToShortDate(data.t[index]),
       };
     });

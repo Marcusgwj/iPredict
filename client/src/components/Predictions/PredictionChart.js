@@ -25,7 +25,7 @@ const PredictionChart = ({ setModel }) => {
   const formatData = (data) => {
     return data.Result.map((item, index) => {
       return {
-        value: item.toFixed(2),
+        value: Number(item.toFixed(2)),
         date: index + 1,
       };
     });
@@ -38,6 +38,7 @@ const PredictionChart = ({ setModel }) => {
         const predict = model[filter];
         const result = await predict(stockSymbol);
         setData(formatData(result));
+        console.log(data);
       } catch (error) {
         setData([]);
         console.log(error);
