@@ -22,7 +22,7 @@ const PredictionsPage = () => {
       <div className="md:col-span-2 row-span-5 xl:col-start-2 xl:col-span-4 ">
         <PredictionChart setModel={setModel} />
       </div>
-      <div className="text-sm row-span-3 md:col-span-2 md:row-span-2 md:text-base  xl:col-start-2 xl:col-span-4 ">
+      <div className="text-xs sm:text-base row-span-4 md:col-span-2 md:row-span-2  xl:col-start-2 xl:col-span-4 ">
         <About model={model} />
       </div>
     </div>

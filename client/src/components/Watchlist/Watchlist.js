@@ -20,7 +20,7 @@ const WatchlistPage = () => {
         setStocks([]);
         console.log(error);
         if (error.request.status === 401) {
-          navigate("/signin");
+          navigate("/signin", { replace: true });
         }
       }
     };

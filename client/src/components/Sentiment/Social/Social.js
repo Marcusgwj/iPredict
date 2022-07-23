@@ -77,11 +77,11 @@ const Social = () => {
   return (
     <Card>
       <div className="flex absolute left-2 top-0 text-lg  text-slate-400">
-        Social sentiment
+        Social sentiment {`${data.length === 0 ? "(Not available)" : ""}`}
         <Popup content={popupString} />
       </div>
 
-      <ul className="flex absolute top-2 right-2 z-2">
+      <ul className="flex absolute top-0 right-0 md:top-2 md:right-2 z-2">
         {["reddit", "twitter"].map((item) => (
           <li key={item}>
             <SocialFilter

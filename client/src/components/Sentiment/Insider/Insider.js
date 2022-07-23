@@ -62,7 +62,7 @@ const Insider = () => {
         console.log(error);
       }
     };
-
+    console.log(data);
     updateChartData();
   }, [stockSymbol]);
 
@@ -71,7 +71,11 @@ const Insider = () => {
       Insider sentiment give us some insight into the executives's opinion
       regarding their company's stock. <br />
       This is measured using{" "}
-      <a href="https://bit.ly/3mn7lKI">Monthly Share Purchase Ratio.</a>
+      <b>
+        <a href="https://bit.ly/3mn7lKI">
+          Monthly Share Purchase Ratio (Read more).
+        </a>{" "}
+      </b>
       <br />
       Insider sentiment is considered positive if its corporate’s shares are
       under net purchasing activity. <br />
@@ -83,7 +87,7 @@ const Insider = () => {
   return (
     <Card>
       <div className="flex absolute left-2 top-0 text-lg  text-slate-400">
-        Insider sentiment
+        Insider sentiment {`${data.length === 0 ? "(Not available)" : ""}`}
         <Popup content={popupString}> </Popup>
       </div>
       <ResponsiveContainer>
