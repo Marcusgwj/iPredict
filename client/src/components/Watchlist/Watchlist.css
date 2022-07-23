@@ -46,7 +46,7 @@
 
 .times {
     position: absolute;
-    margin-left: 60%;
+    margin-left: 55%;
 }
 
 .times:hover {
@@ -67,8 +67,12 @@
     .change {
         display: none;
     }
+    .price {
+        margin-left: 30%;
+    }
+
     .percent {
-        margin-left: 40%;
+        margin-left: 50%;
     }
 
     .times {
