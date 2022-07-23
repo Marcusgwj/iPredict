@@ -65,7 +65,7 @@ export default function SignUp() {
     e.preventDefault();
     dispatch({ type: "LOGIN_START" });
     try {
-      const res = await axiosInstance.post("/auth/register", credentials);
+      const res = await axiosInstance.post("/api/auth/register", credentials);
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data.username });
       navigate("/");
     } catch (err) {

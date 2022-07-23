@@ -12,7 +12,7 @@ export const ProfileContextProvider = ({ children }) => {
     const retrievePhoto = async () => {
       if (user) {
         try {
-          const res = await axiosInstance.post("/picture/getPicture", {
+          const res = await axiosInstance.post("/api/picture/getPicture", {
             username: user,
           });
           setUserPhoto(res.data);

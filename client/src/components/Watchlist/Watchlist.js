@@ -14,7 +14,7 @@ const WatchlistPage = () => {
   useEffect(() => {
     const updateStocksData = async () => {
       try {
-        const result = await axiosInstance.get("/watchlist/getStocks");
+        const result = await axiosInstance.get("/api/watchlist/getStocks");
         setStocks(result.data);
       } catch (error) {
         setStocks([]);

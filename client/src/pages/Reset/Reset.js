@@ -64,7 +64,7 @@ function Reset() {
     e.preventDefault();
     try {
       console.log(credentials);
-      await axiosInstance.post("/reset/request", credentials);
+      await axiosInstance.post("/api/reset/request", credentials);
       setMsg({ show: true, msg: "Email sent" });
     } catch (err) {
       setMsg({ show: true, msg: err.response.data.message });

@@ -10,7 +10,7 @@ const Stock = (props) => {
   const [stock, setStock] = useState({});
 
   const removeWatchList = async (stock) => {
-    await axiosInstance.post("/watchlist/removeStocks", { stock });
+    await axiosInstance.post("/api/watchlist/removeStocks", { stock });
   };
 
   useEffect(() => {

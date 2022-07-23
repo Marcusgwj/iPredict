@@ -4,7 +4,7 @@ import axiosInstance from "../../utils/config";
 const AddSearchResults = ({ results, clear }) => {
   const { darkMode } = useContext(ThemeContext);
   const addToWatchList = async (stock) => {
-    await axiosInstance.post("/watchlist/addStocks", { stock });
+    await axiosInstance.post("/api/watchlist/addStocks", { stock });
   };
 
   return (

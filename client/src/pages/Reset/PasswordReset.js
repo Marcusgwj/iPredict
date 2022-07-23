@@ -69,7 +69,7 @@ function PasswordReset() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axiosInstance.post("/reset/change", credentials);
+      await axiosInstance.post("/api/reset/change", credentials);
       setMsg({ show: true, msg: "Password reset successful" });
       setSuccess(true);
     } catch (err) {

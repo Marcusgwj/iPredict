@@ -74,9 +74,9 @@ function ProfileSettings() {
       formData.append("password", credentials.password);
       formData.append("image", credentials.image);
 
-      const res = await axiosInstance.post("/reset/update", formData);
+      const res = await axiosInstance.post("/api/reset/update", formData);
       if (credentials.image) {
-        const response = await axiosInstance.post("/picture/getPicture", {
+        const response = await axiosInstance.post("/api/picture/getPicture", {
           username: res.data.username,
         });
         setUserPhoto(response.data);

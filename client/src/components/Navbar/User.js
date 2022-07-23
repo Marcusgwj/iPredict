@@ -19,7 +19,7 @@ export default function User() {
   const navigate = useNavigate();
   const logout = async () => {
     try {
-      await axiosInstance.post("/auth/logout");
+      await axiosInstance.post("api/auth/logout");
       dispatch({ type: "LOGOUT" });
       navigate("/");
     } catch (err) {
