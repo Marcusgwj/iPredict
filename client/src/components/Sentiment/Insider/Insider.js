@@ -62,7 +62,6 @@ const Insider = () => {
         console.log(error);
       }
     };
-    console.log(data);
     updateChartData();
   }, [stockSymbol]);
 

@@ -1,8 +1,6 @@
 import { ThemeContext } from "../../context/ThemeContext";
 import { useContext } from "react";
 
-import { CheckIcon } from "@heroicons/react/solid";
-
 const HomePrediction = () => {
   const { darkMode } = useContext(ThemeContext);
   return (
