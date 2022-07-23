@@ -25,7 +25,7 @@ const PredictionChart = ({ setModel }) => {
   const formatData = (data) => {
     return data.Result.map((item, index) => {
       return {
-        value: item.toFixed(2),
+        value: Number(item.toFixed(2)),
         date: index + 1,
       };
     });
