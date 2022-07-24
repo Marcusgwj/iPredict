@@ -7,8 +7,15 @@ import isStrongPassword from "validator/lib/isStrongPassword.js";
 
 export const register = async (req, res, next) => {
   try {
-    if (!isEmail(req.body.email)) {
+    if (!req.body.username) {
+      return next(createError(400, "Invalid username"));
+    }
+    if (!req.body.email || !isEmail(req.body.email)) {
       return next(createError(400, "Invalid email"));
+    }
+
+    if (!req.body.password) {
+      return next(createError(400, "Invalid password"));
     } else if (!isStrongPassword(req.body.password)) {
       return next(
         createError(
@@ -44,6 +51,14 @@ export const register = async (req, res, next) => {
 
 export const login = async (req, res, next) => {
   try {
+    if (!req.body.email || !isEmail(req.body.email)) {
+      return next(createError(400, "Invalid email"));
+    }
+
+    if (!req.body.password) {
+      return next(createError(400, "Invalid password"));
+    }
+
     const user = await User.findOne({ email: req.body.email });
     if (!user) return next(createError(404, "User not found!"));
 
