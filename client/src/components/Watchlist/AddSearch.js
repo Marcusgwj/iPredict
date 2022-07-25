@@ -41,7 +41,7 @@ const AddSearch = () => {
         className={`w-full px-4 py-2 focus:outline-none rounded-md ${
           darkMode ? "bg-gray-900" : null
         }`}
-        placeholder="Enter ticker..."
+        placeholder="Add ticker"
         onChange={(event) => setInput(event.target.value)}
         onKeyPress={(event) => {
           if (event.key === "Enter") {

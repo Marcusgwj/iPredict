@@ -19,9 +19,9 @@ const UserSchema = new Schema({
   photo: {
     type: String,
   },
-  watchlist: {
+  portfolio: {
     type: Schema.Types.ObjectId,
-    ref: "Watchlist",
+    ref: "Portfolio",
   },
 });
 
