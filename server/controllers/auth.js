@@ -41,7 +41,7 @@ export const register = async (req, res, next) => {
         });
         await newUser.save();
         const { username } = newUser;
-        res.status(200).json({ username });
+        return res.status(200).json({ username });
       }
     }
   } catch (err) {
