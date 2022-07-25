@@ -55,6 +55,10 @@ const Chart = () => {
         endDate = createDate(endDate, -1, 0, 0, 0);
       }
 
+      if (day === 1) {
+        endDate = new Date();
+      }
+
       const startDate = createDate(endDate, -days, -weeks, -months, -years);
 
       const startTimestampUnix = convertDateToUnixTimestamp(startDate);
