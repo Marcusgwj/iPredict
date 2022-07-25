@@ -35,7 +35,7 @@ export const addStocks = async (req, res, next) => {
       user.portfolio.stocks.set(req.body.stock, req.body.stock);
       await user.portfolio.save();
     }
-
+    await user.save();
     res.status(200).send("Added stock");
   } catch (err) {
     next(err);
