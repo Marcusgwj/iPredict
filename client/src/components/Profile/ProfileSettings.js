@@ -193,15 +193,27 @@ function ProfileSettings() {
                 autoComplete="current-password"
                 onChange={handleChange}
               />
-              <Button
-                type="submit"
-                fullWidth
-                variant="contained"
-                sx={{ mt: 3, mb: 2 }}
-                disabled={loading}
-              >
-                Update changes
-              </Button>
+              {user === "tester" ? (
+                <Button
+                  type="submit"
+                  fullWidth
+                  variant="contained"
+                  sx={{ mt: 3, mb: 2 }}
+                  disabled={true}
+                >
+                  Not allowed to update guest account
+                </Button>
+              ) : (
+                <Button
+                  type="submit"
+                  fullWidth
+                  variant="contained"
+                  sx={{ mt: 3, mb: 2 }}
+                  disabled={loading}
+                >
+                  Update changes
+                </Button>
+              )}
             </Box>
           </form>
         </Box>
