@@ -41,7 +41,15 @@ export const register = async (req, res, next) => {
         });
         await newUser.save();
         const { username } = newUser;
-        return res.status(200).json({ username });
+        const token = jwt.sign({ id: newUser._id }, process.env.JWT);
+        res
+          .cookie("access_token", token, {
+            secure: true,
+            httpOnly: true,
+            maxAge: 7 * 24 * 60 * 60 * 1000,
+          })
+          .status(200)
+          .json({ username });
       }
     }
   } catch (err) {
