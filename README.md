@@ -10,7 +10,7 @@
   <p align="center">
     Check it out:
     <br />
-    <a href="https://ipredict.herokuapp.com/"><strong>Website</strong></a>
+    <a href="https://ipredict.onrender.com/"><strong>Website</strong></a>
     <br />
     <br />
     <a href="https://bit.ly/3PCBK4i">Read the docs</a>
@@ -61,9 +61,9 @@ iPredict helps investors make a more informed decision when buying or selling th
 
 ## Usage
 
-[Sign in](https://ipredict.herokuapp.com/signin) as guest:
+[Sign in](https://ipredict.onrender.com/signin) as guest:
 
-Or [Sign up](https://ipredict.herokuapp.com/signup) for your account
+Or [Sign up](https://ipredict.onrender.com/signup) for your account
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
