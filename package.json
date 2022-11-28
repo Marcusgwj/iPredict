@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "nodemon index.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "render-postbuild": "cd client && npm install && npm run build"
   },
   "keywords": [],
   "author": "",

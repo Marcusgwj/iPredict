@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const basePath = "https://stock-predictionapi.herokuapp.com";
+const basePath = "https://stock-predictionapi.onrender.com";
 
 export const fetchLR = async (stock) => {
   try {
